@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 '''
 Created on Feb 24, 2012
-@author: umuellerwilm
+@author: TPZV
 '''
 import fnmatch
 import warnings
@@ -928,11 +928,11 @@ class L2A_Tables(object):
                 break
 
         upsampling = False
-        # 10m bands only: perform an up sampling of SCL, AOT, and VIS from 20 m channels to 10
+        # 10m bands only: perform an up sampling of SCL, AOT, WVP, and VIS from 20 m channels to 10
         if(self._resolution == 10):
             self.logger.info('perform up sampling of SCL, AOT and VIS from 20m channels to 10m')
             srcResolution = '_20m'
-            channels = [17,19]
+            channels = [17,18,19]
             sourceDir = self._L2A_bandDir.replace('R10m', 'R20m')
             upsampling = True
         
@@ -1201,6 +1201,7 @@ class L2A_Tables(object):
         command = 'gdalwarp '
         arguments = '-ot Int16 '
         callstr = command + arguments + t_srs + t_warp + srtmf_src + ' ' + tmpFile + self._DEV0
+        l.acquire()
         try:
             if(os.path.isfile(tmpFile) == True):
                 os.remove(tmpFile)
@@ -1210,7 +1211,6 @@ class L2A_Tables(object):
         except:
             stderrWrite('Error reading DEM, flat surface will be used.\n')
             self.logger.fatal('Error reading DEM, flat surface will be used')
-            os.remove(srtmf_src)
             return False
         finally:
             l.release()
@@ -1225,7 +1225,7 @@ class L2A_Tables(object):
         copyfile(tmpFile, self._TmpFile)
         self.importBand(self.DEM)
         os.rename(self._TmpFile, self._TmpDemFile)
-        os.remove(srtmf_src)
+        os.remove(tmpFile)
         self.logger.info('DEM received and prepared')     
         return True
     
@@ -1610,7 +1610,7 @@ class L2A_Tables(object):
                 bandIndex = [1,2,3,4,5,6,8,11,12,13,14,15,16]
         elif(self._resolution == 60):
             if(self.acMode == True):
-                bandIndex = [0,1,2,3,4,5,6,8,9,11,12,13,14,15,16,17,18,19,27]
+                bandIndex = [0,1,2,3,4,5,6,8,9,11,12,13,14,15,16,17,18,27]
             else:
                 bandIndex = [0,1,2,3,4,5,6,8,9,11,12,13,14,15,16]
         #prepare the xml export

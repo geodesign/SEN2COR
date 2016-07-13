@@ -1,6 +1,6 @@
 '''
 Created on 22.04.2015
-@author: Uwe Mueller-Wilm
+@author: TPZV
 usage python setup.py build_ext
 '''
 import platform

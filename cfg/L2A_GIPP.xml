@@ -1,13 +1,13 @@
 <?xml version="1.0"  encoding="UTF-8"?>
 <Level-2A_Ground_Image_Processing_Parameter xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="L2A_GIPP.xsd">
   <Common_Section>
-    <Log_Level>INFO</Log_Level>
+    <Log_Level>DEBUG</Log_Level>
     <!-- can be: NOTSET, DEBUG, INFO, WARNING, ERROR, CRITICAL -->
-    <Nr_Processes>1</Nr_Processes>
+    <Nr_Processes>AUTO</Nr_Processes>
     <!-- can be an unsigned integer value specifying the number or processes you intend to operate in parallel or: AUTO. If AUTO is chosen, the processor determines the number of processes automatically, using cpu_count() -->
     <Target_Directory>DEFAULT</Target_Directory>
     <!-- should be either a directory or 'DEFAULT'. If default, target will be created at root of L1C product -->
-    <DEM_Directory>NONE</DEM_Directory>
+    <DEM_Directory>dem/dted</DEM_Directory>
     <!-- should be either a directory in the sen2cor home folder or 'NONE'. If NONE, no DEM will be used -->
     <DEM_Reference>http://data_public:GDdci@data.cgiar-csi.org/srtm/tiles/GeoTIFF/</DEM_Reference>
     <!-- will be ignored, if DEM is NONE. A SRTM DEM will be downloaded from this reference, if no local DEM is available -->

@@ -1,0 +1,1520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0519376b-9ae4-4e9b-aa6d-a74c41b302be" name="Default" comment="updates to v2.2.0">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SEN2COR/sen2cor.egg-info/SOURCES.txt" afterPath="$PROJECT_DIR$/../SEN2COR/sen2cor.egg-info/SOURCES.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SEN2COR/sen2cor.egg-info/pbr.json" afterPath="$PROJECT_DIR$/../SEN2COR/sen2cor.egg-info/pbr.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../SEN2THREE-1.0/.idea/workspace.xml" afterPath="$PROJECT_DIR$/../SEN2THREE-1.0/.idea/workspace.xml" />
+    </list>
+    <ignored path="SEN2COR-2.2.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="SEN2COR-2.2">
+      <favorite_root url="file://$PROJECT_DIR$/sen2cor/L2A_Process.spec" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+      <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea/vcs.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea/misc.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea/modules.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea/SEN2THREE.iml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.idea/workspace.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/DEFAULT" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.project" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/setup.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.settings" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.settings/org.eclipse.core.resources.prefs" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/plan" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/plan/ACQ.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/header" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/header/stationHeader.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/report" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/report/StationDownlink.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/GS/report/StationUnavailability.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/misc" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/misc/misc.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/tile" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/tile/tile.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/image" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/image/image.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/spatio" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/spatio/spatio.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/orbital" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/orbital/orbital.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/orbital/HeaderTypes_Orbit.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/platform" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/platform/platform.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/date_time" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/date_time/date_time.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/geographical" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/geographical/geographical.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/representation" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/SY/representation/representation.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/header" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/header/DPC_Header.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                      <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleWGS84Box2.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleConstraint1.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleGeneralBox2.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleCapabilities.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleCapabilities1.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleExceptionReport1.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleExceptionReport2.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleGetCapabilities2.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/Examples/exampleOperationsMetadata.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          </favorite_root>
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsAll.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/ReadMe.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsCommon.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsContents.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsManifest.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsDomainType.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/ows19115subset.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsExceptionReport.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsGetCapabilities.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsGetResourceByID.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsInputOutputData.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsServiceProvider.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsDataIdentification.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsOperationsMetadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/ows/1.1.0/owsServiceIdentification.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        </favorite_root>
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/WSDL.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/ProcessVersion.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/DescriptionType.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/RequestBaseType.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/ProcessBriefType.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/common/ResponseBaseType.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          </favorite_root>
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/DPC_services.wsdl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/example_service.wsdl" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/MyComplexValueSchema.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/90_wpsExceptionReport.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/62_wpsExecute_response.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/10_wpsGetCapabilities_request.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/30_wpsDescribeProcess_request.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/20_wpsGetCapabilities_response.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/40_wpsDescribeProcess_response.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/10_wpsGetCapabilities_request_SOAP.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/30_wpsDescribeProcess_request_SOAP.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/53_wpsExecute_request_ComplexValue.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/20_wpsGetCapabilities_response_SOAP.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/50_wpsExecute_request_RawDataOutput.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/51_wpsExecute_request_ResponseDocument.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/52_wpsExecute_request_ResponseDocument.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/40_wpsDescribeProcess_response-extended.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/examples/51_wpsExecute_request-extended_ResponseDocument.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          </favorite_root>
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/ReadMe.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsAll.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsExecute_request.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsExecute_response.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsDescribeProcess_request.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsGetCapabilities_request.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsDescribeProcess_response.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/wps/1.0.0/wpsGetCapabilities_response.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        </favorite_root>
+                      </favorite_root>
+                      <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/xlinks" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/xlinks/1.0.0" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/opengis/xlinks/1.0.0/xlinks.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                        </favorite_root>
+                      </favorite_root>
+                    </favorite_root>
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/ProductionManage.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/owsExceptionReport.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/services/DPC_ExceptionReport.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/processing" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/processing/baseProcessing.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DPC/processing/synthesisReport.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_predicted" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_predicted/EO_OPER_MPL_ORBPRE.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_Reference" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_Reference/EO_OPER_MPL_ORBSCT_REF.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_Restituted" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/FOS/Orb_Restituted/EO_OPER_AUX_ORBRES.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/job" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/job/IPF_JobOrder.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/job/IDP_SC_LaunchReport.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/job/IDP_SC_Configuration.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/base" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/IPF/base/base.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/base" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/base/base.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/dimap" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/dimap/dimap.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/dimap/dimap3.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/dimap/dimap2A.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/center" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/center/center.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/header" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/header/EOF_Header.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/archive" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/archive/archive.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/station" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/station/StationUnavailability.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/component" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/component/component.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/fileNaming" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/fileNaming/fileNaming.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/spacecraft" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/spacecraft/spacecraft.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/configuration" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/configuration/configuration.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/logical_definitions" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/PDGS/logical_definitions/logical_definitions.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+                <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/item" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/item/item.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/item/item3.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/item/item2A.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                  <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/userProduct" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                    <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/DICO/1.0/DataAccess/userProduct/userProduct.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  </favorite_root>
+                </favorite_root>
+              </favorite_root>
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/Readme.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/.estimation" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/INSPIRE.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/L3_GIPP.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/L3_GIPP.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/R2R_GIPP.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/R2R_GIPP.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/manifest.safe" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/OLQC_Report.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/Inventory_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Tile_Metadata.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Tile_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/[PSD] S2-PDGS-TAS-DI-PSD [12].pdf" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-1C_Tile_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-2A_Tile_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Tile_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-1C_Tile_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-2A_Tile_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-3_Metadata.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-3_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Datastrip_Metadata.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Datastrip_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-1C_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-2A_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-3_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-1C_Datastrip_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-2A_Datastrip_Metadata.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-3_Datastrip_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-1C_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_User_Product_Level-2A_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-1C_Datastrip_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2_PDI_Level-2A_Datastrip_Structure.xsd" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2A_USER_MTD_L03_TL_MPS__20140215T120000_A000001_T14RMQ.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2A_USER_MTD_L03_DS_MPS__20150621T120000_S20140201T000000.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/cfg/S2A_USER_MTD_MSIL03_MPS__20150621T120000_R002_V20140201T000000_20140228T235959.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/lib" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/lib/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/lib/GlobalSnowMap.tiff" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/.progress" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T215635_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T215717_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T215955_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T221156_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T221654_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160417T222648_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T011559_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T074207_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T074454_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T074621_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T082316_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T083649_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T084415_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T090227_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T091357_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T103734_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T105201_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T110348_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T112321_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T113022_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T113207_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T114803_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T120555_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T121839_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T123546_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T124743_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T133318_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T133831_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T135845_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T142442_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T143540_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T145259_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T153406_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T154424_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T155610_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T160211_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T160230_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T160255_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T160824_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T161739_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T161800_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T161931_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T162107_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T163402_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T163716_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T164916_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T165035_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T173137_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T174249_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T181029_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T181055_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T181120_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T185222_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T185424_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T190051_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T190330_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T190711_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T191408_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T191436_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T191543_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T192127_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T192156_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T193541_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T194338_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T201203_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T201617_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T201931_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T203022_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T203325_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T204456_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T204744_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T205150_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T205851_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T211840_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T222339_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T222412_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T222431_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T231909_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T232007_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160418T233612_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T072100_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T093127_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T093706_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T094023_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T111132_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T111323_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T111411_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T112726_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T114446_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T122228_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T134512_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T142534_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T155328_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T161221_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T163209_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T171527_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T173304_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T173328_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T174925_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T175932_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T181120_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T184055_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T191838_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T192002_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T193200_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T193440_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T194100_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T200949_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T201322_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160419T210005_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T072919_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T074907_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T080229_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T080530_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T081143_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T081223_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T081600_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083006_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083039_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083619_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083655_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083801_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T083902_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T085337_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T093640_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T112445_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T152452_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T160419_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T160615_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T161334_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T195342_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T195837_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T210739_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T220058_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T220448_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T222536_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/log/L3_20160420T224730_report.xml" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.win-amd64-2.7" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.win-amd64-2.7/openjp2.dll" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.linux-x86_64-2.7" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.linux-x86_64-2.7/libopenjp2.so" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+            <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.macosx-10.5-x86_64-2.7" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/build/lib.macosx-10.5-x86_64-2.7/libopenjp2.dylib" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+          </favorite_root>
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Borg.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/__init__.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Config.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Tables.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L2A_Tables.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Display.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Library.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Process.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Product.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L2A_Process.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/R2R_Convert.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Synthesis.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_XmlParser.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L2A_SceneClass.py" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.gitignore" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/.pydevproject" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three.egg-info" module="SEN2THREE" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three.egg-info/pbr.json" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three.egg-info/PKG-INFO" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three.egg-info/SOURCES.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+          <favorite_root url="file://$PROJECT_DIR$/../SEN2THREE-0.9/sen2three.egg-info/entry_points.txt" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+      </favorite_root>
+    </favorites_list>
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="umwilm" />
+        <option value="UMWILM" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../SEN2THREE-1.0" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/setup.py" />
+        <option value="$PROJECT_DIR$/sen2cor/L2A_AtmCorr.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-0.9/sen2three/L3_Tables.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/L3_GIPP.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/Readme.txt" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/S2_User_Product_Level-3_Metadata.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/DICO/13/DataAccess/item/item3.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/DICO/12/DataAccess/item/item3.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/S2_PDI_Level-3_Tile_Metadata.xsd" />
+        <option value="$PROJECT_DIR$/dist/sen2cor-2.2.1/build/lib/sen2cor/L2A_Tables.py" />
+        <option value="$PROJECT_DIR$/cfg/L2A_GIPP.xml" />
+        <option value="$PROJECT_DIR$/sen2cor/L2A_Tables.py" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL2A_PDMC_20150819T215452_R108_V20150819T104425_20150819T104425.SAFE/S2A_USER_MTD_SAFL2A_PDMC_20150819T215452_R108_V20150819T104425_20150819T104425.xml" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/DICO/12/PDGS/dimap/dimap.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/DICO/13/PDGS/dimap/dimap3.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/DICO/12/PDGS/dimap/dimap3.xsd" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/MANIFEST.in" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/log/L3_20160617T192421_report.xml" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T211918_R065_V20150101T000000_20161231T235959.SAFE/S2A_USER_MTD_SAFL03_PDMC_20150812T211918_R065_V20150806T102902_20150806T102902.xml" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL2A_PDMC_20150812T211918_R065_V20150812T102902_20150806T102902.SAFE/S2A_USER_MTD_SAFL2A_PDMC_20150812T211918_R065_V20150806T102902_20150806T102902.xml" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T211918_R065_V20150101T000000_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T174654_A000634_T32UMA_N01.03/S2A_USER_MTD_L03_TL_MTI__20150812T174654_A000634_T32UMA.xml" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/random.py" />
+        <option value="$USER_HOME$/Testdata/L03/_processed" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/ide/ide-scripting.groovy" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/S2A_USER_MTD_L03_TL_MTI__20150812T154929_A000534_T32UMA.xml" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/rnd.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/log/.progress" />
+        <option value="$PROJECT_DIR$/log/.progress" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/log/.estimation" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Display.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Library.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Tables.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_XmlParser.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Borg.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+        <option value="$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/S2A_USER_MTD_SAFL03_PDMC_20150812T193220_R108_V20150730T103914_20150730T103914.xml" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Config.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/L3_GIPP.xml" />
+        <option value="$PROJECT_DIR$/../sphinx/source/dpm.rst" />
+        <option value="$PROJECT_DIR$/../sphinx/source/index.rst" />
+        <option value="$PROJECT_DIR$/../sphinx/source/conf.py" />
+        <option value="$PROJECT_DIR$/../sphinx/source/pfs.rst" />
+        <option value="$PROJECT_DIR$/../sphinx/source/iodd.rst" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Synthesis.py" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Product.py" />
+        <option value="$USER_HOME$/Testdata/L03/processed" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/cfg/L3_GIPP.xml" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/setup.py" />
+        <option value="$PROJECT_DIR$/../sphinx/source/sum.rst" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/README.txt" />
+        <option value="$PROJECT_DIR$/../SEN2THREE-1.0/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyCompatibilityInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="Scope" currentSubView="Changed Files" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope">
+        <subPane subId="Changed Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="ProjectPane">
+        <subPane />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sphinx" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/../SEN2COR-2.2.0/sen2cor/L2A_AtmCorr.py" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.splitter.proportion" value="0.26646706" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="159" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="169" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="736" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder3" value="3" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="159" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder0" value="0" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="165" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="169" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="736" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/cfg" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three" />
+      <recent name="$USER_HOME$/Testdata/L03" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema/STRUCTURE" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/../sphinx/build/pdf" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/S2-PDGS-TAS-DI-PSD-V13.1_Schema" />
+      <recent name="$PROJECT_DIR$/../SEN2THREE-1.0/dist" />
+      <recent name="$USER_HOME$/Testdata/L03/archive" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.L3_Process r60">
+    <configuration default="false" name="setup build_ext" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sen2cor" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sen2cor/setup.py" />
+      <option name="PARAMETERS" value="build_ext" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/rnd.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="docutils task in sum.rst" type="docs" factoryName="Docutils task" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../sphinx/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sphinx" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$/../sphinx/source/sum.rst" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/../sphinx/source/sum.html" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="rst2html" />
+      <option name="docutils_open_in_browser" value="true" />
+      <method />
+    </configuration>
+    <configuration default="false" name="docutils task in dpm.rst" type="docs" factoryName="Docutils task" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../sphinx/source" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="sphinx" />
+      <option name="docutils_input_file" value="$PROJECT_DIR$/../sphinx/source/dpm.rst" />
+      <option name="docutils_output_file" value="$PROJECT_DIR$/../sphinx/source/dpm.html" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="rst2html" />
+      <option name="docutils_open_in_browser" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Docutils task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="docs" factoryName="Sphinx task">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="L03" />
+      <option name="docutils_input_file" value="" />
+      <option name="docutils_output_file" value="" />
+      <option name="docutils_params" value="" />
+      <option name="docutils_task" value="" />
+      <option name="docutils_open_in_browser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L2A_Process" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="GDAL_DATA" value="/Users/umwilm/Development/workspace/SEN2COR-2.2/sen2cor/cfg/gdal_data" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata/L1C" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/sen2cor/L2A_Process.py" />
+      <option name="PARAMETERS" value="S2A_OPER_PRD_MSIL1C_PDMC_20150630T084936_R062_V20150627T103515_20150627T103515.TORINO --resolution=60" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L2A_TestUtils" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="GDAL_DATA" value="/Users/umwilm/Development/workspace/SEN2COR-2.2/sen2cor/cfg/gdal_data" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Test_Data/L1C" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2COR-Test/L2A_TestUtils.py" />
+      <option name="PARAMETERS" value="S2A_OPER_PRD_MSIL1C_PDMC_20160329T011555_R139_V20160328T145712_20160328T145712.SAFE --resolution=60" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="setup sdist" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="GDAL_DATA" value="gsc.csv" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="sdist" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="setup sdist zip" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="GDAL_DATA" value="gsc.csv" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="sdist --formats=zip" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="setup install" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="$USER_HOME$/anaconda/bin/python" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../test_install/sen2cor-2.2.0" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2COR-2.2" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="install" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L3_Process r10" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SEN2THREE_HOME" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0" />
+        <env name="SEN2THREE_BIN" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0/sen2three" />
+        <env name="GDAL_DATA" value="/Users/umwilm/anaconda/share/gdal" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+      <option name="PARAMETERS" value="L03 --resolution=10" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L3_Process r20" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SEN2THREE_HOME" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0" />
+        <env name="SEN2THREE_BIN" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0/sen2three" />
+        <env name="GDAL_DATA" value="/Users/umwilm/anaconda/share/gdal" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+      <option name="PARAMETERS" value="L03 --resolution=20 --clean" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L3_Process r60" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SEN2THREE_HOME" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0" />
+        <env name="SEN2THREE_BIN" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0/sen2three" />
+        <env name="GDAL_DATA" value="/Users/umwilm/anaconda/share/gdal" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+      <option name="PARAMETERS" value="L03 --resolution=60 --clean" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L3_Process r60 (1)" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SEN2THREE_HOME" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0" />
+        <env name="SEN2THREE_BIN" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0/sen2three" />
+        <env name="GDAL_DATA" value="/Users/umwilm/anaconda/share/gdal" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+      <option name="PARAMETERS" value="L03 --clean" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="L3_Process --help" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="SEN2THREE_HOME" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0" />
+        <env name="SEN2THREE_BIN" value="/Users/umwilm/Development/workspace/SEN2THREE-1.0/sen2three" />
+        <env name="GDAL_DATA" value="/Users/umwilm/anaconda/share/gdal" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$USER_HOME$/Testdata" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="SEN2THREE-1.0" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py" />
+      <option name="PARAMETERS" value="--help" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <list size="14">
+      <item index="0" class="java.lang.String" itemvalue="Python.L2A_Process" />
+      <item index="1" class="java.lang.String" itemvalue="Python.L2A_TestUtils" />
+      <item index="2" class="java.lang.String" itemvalue="Python.setup sdist" />
+      <item index="3" class="java.lang.String" itemvalue="Python.setup sdist zip" />
+      <item index="4" class="java.lang.String" itemvalue="Python.setup install" />
+      <item index="5" class="java.lang.String" itemvalue="Python.L3_Process r10" />
+      <item index="6" class="java.lang.String" itemvalue="Python.L3_Process r20" />
+      <item index="7" class="java.lang.String" itemvalue="Python.L3_Process r60" />
+      <item index="8" class="java.lang.String" itemvalue="Python.L3_Process r60 (1)" />
+      <item index="9" class="java.lang.String" itemvalue="Python.L3_Process --help" />
+      <item index="10" class="java.lang.String" itemvalue="Python.setup build_ext" />
+      <item index="11" class="java.lang.String" itemvalue="Python.random" />
+      <item index="12" class="java.lang.String" itemvalue="Python docs.docutils task in sum.rst" />
+      <item index="13" class="java.lang.String" itemvalue="Python docs.docutils task in dpm.rst" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Python docs.docutils task in sum.rst" />
+        <item index="1" class="java.lang.String" itemvalue="Python.random" />
+        <item index="2" class="java.lang.String" itemvalue="Python docs.docutils task in dpm.rst" />
+        <item index="3" class="java.lang.String" itemvalue="Python.setup build_ext" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0519376b-9ae4-4e9b-aa6d-a74c41b302be" name="Default" comment="" />
+      <created>1458808406897</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1458808406897</updated>
+    </task>
+    <task id="LOCAL-00001" summary="updates to v2.2.0">
+      <created>1460446214451</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1460446214451</updated>
+    </task>
+    <task id="LOCAL-00002" summary="updates to v2.2.0">
+      <created>1460640250264</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1460640250264</updated>
+    </task>
+    <task id="LOCAL-00003" summary="prerelease">
+      <created>1467991617162</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1467991617162</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Unittests_in_SEN2COR-Test - 2016.04.13 at 10h 38m 14s.xml">
+      <configuration name="Unittests in SEN2COR-Test" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TodoView" selected-index="3">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33915806" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13661203" sideWeight="0.5025284" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31967214" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2668785" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26092896" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15856482" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16159496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15147783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45646766" sideWeight="0.49747154" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1727672" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15856482" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13661203" sideWeight="0.5025284" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31967214" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2536476" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16159496" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22536945" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25769463" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.15147783" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2670157" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45646766" sideWeight="0.49747154" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="updates to v2.2.0" />
+    <MESSAGE value="prerelease" />
+    <option name="LAST_COMMIT_MESSAGE" value="prerelease" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Synthesis.py</url>
+          <line>265</line>
+          <option name="timeStamp" value="796" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Synthesis.py</url>
+          <line>231</line>
+          <option name="timeStamp" value="797" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Synthesis.py</url>
+          <line>222</line>
+          <option name="timeStamp" value="798" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="799" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="row[key]" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/HTML/banner_3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/HTML/star_bg.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/HTML/UserProduct_index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/HTML/UserProduct_index.xsl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/HTML/SEN2COR_report.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74443">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/QI_DATA/S2A_USER_MTD_L03_TL_MTI__20150812T154929_A000534_T32UMA_Report.xml" />
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/L2A_Manifest.xml" />
+    <entry file="file://$PROJECT_DIR$/sen2cor/L2A_Manifest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="350" column="52" selection-start-line="350" selection-start-column="52" selection-end-line="350" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/.settings/org.eclipse.core.resources.prefs" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/build/.doctrees/setup.doctree" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/.pydevproject" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/.project" />
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/L3_GIPP.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Display.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="14">
+          <caret line="1" column="29" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/dpm.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4305">
+          <caret line="287" column="68" selection-start-line="287" selection-start-column="68" selection-end-line="287" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L2A_Tables.py" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="251" column="41" selection-start-line="251" selection-start-column="41" selection-end-line="251" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/sum.html" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/pfs.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="518">
+          <caret line="334" column="74" selection-start-line="334" selection-start-column="74" selection-end-line="334" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/iodd.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="98" column="16" selection-start-line="98" selection-start-column="16" selection-end-line="98" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20160128T092947_R108_V20161231T235959_20161231T235959.SAFE/S2A_USER_MTD_SAFL03_PDMC_20160128T092947_R108_V20160126T104630_20160126T104630.xml" />
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL2A_PDMC_20160408T183838_R108_V20150829T103028_20150829T103028.SAFE/GRANULE/S2A_USER_MSI_L2A_TL_EPA__20160408T002152_A000963_T32UMA_N02.01/S2A_USER_MTD_L2A_TL_EPA__20160408T002152_A000963_T32UMA.xml" />
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL2A_PDMC_20150812T193220_R108_V20150730T103914_20150730T103914.SAFE/S2A_USER_MTD_SAFL2A_PDMC_20150812T193220_R108_V20150730T103914_20150730T103914.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Tables.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="643" column="0" selection-start-line="643" selection-start-column="0" selection-end-line="643" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL2A_PDMC_20150812T193220_R108_V20150730T103914_20150730T103914.SAFE/GRANULE/S2A_USER_MSI_L2A_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/S2A_USER_MTD_L2A_TL_MTI__20150812T154929_A000534_T32UMA.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-142518">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20160128T092947_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_SGS__20160126T161251_A003108_T32UMA_N02.01/S2A_USER_MTD_L03_TL_SGS__20160126T161251_A003108_T32UMA.xml" />
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="19" selection-start-line="8" selection-start-column="0" selection-end-line="9" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/QI_DATA/S2A_USER_PLT_L03_TL_MTI__20150812T154929_A000534_T32UMA_2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/QI_DATA/S2A_USER_PLT_L03_TL_MTI__20150812T154929_A000534_T32UMA_3.png" />
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/QI_DATA/S2A_USER_PLT_L03_TL_MTI__20150812T154929_A000534_T32UMA_4.png" />
+    <entry file="file://$USER_HOME$/Testdata/L03/processed">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/tables/table.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="2996" column="0" selection-start-line="2996" selection-start-column="0" selection-end-line="2996" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Testdata/L03/S2A_USER_PRD_MSIL03_PDMC_20150812T193220_R108_V20161231T235959_20161231T235959.SAFE/GRANULE/S2A_USER_MSI_L03_TL_MTI__20150812T154929_A000534_T32UMA_N01.03/QI_DATA/S2A_USER_PLT_L03_TL_MTI__20150812T154929_A000534_T32UMA_8.png" />
+    <entry file="file://$USER_HOME$/anaconda/lib/python2.7/site-packages/glymur/jp2k.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="1325" column="0" selection-start-line="1325" selection-start-column="0" selection-end-line="1325" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="641" column="0" selection-start-line="641" selection-start-column="0" selection-end-line="641" selection-end-column="0" />
+          <folding>
+            <element signature="e#53#87#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/cfg/L3_GIPP.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="39" selection-start-line="18" selection-start-column="39" selection-end-line="18" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Synthesis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="231" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="231" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/cfg/L3_GIPP.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/index.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/source/sum.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="789" column="29" selection-start-line="789" selection-start-column="29" selection-end-line="789" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="27" column="49" selection-start-line="27" selection-start-column="49" selection-end-line="27" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three.egg-info/PKG-INFO">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/hist_simple.png" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/hist_with_text.png" />
+    <entry file="file://$PROJECT_DIR$/../sphinx/plot_simple.png" />
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/MANIFEST.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/README.md">
+      <provider editor-type-id="MarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="315">
+            <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../sphinx/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2655">
+          <caret line="177" column="0" selection-start-line="177" selection-start-column="0" selection-end-line="177" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../SEN2THREE-1.0/sen2three/L3_Process.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="210" column="30" selection-start-line="210" selection-start-column="30" selection-end-line="210" selection-end-column="30" />
+          <folding>
+            <element signature="e#201#221#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -29,8 +29,8 @@ class L2A_Config(object):
     
     def __init__(self, logger, sourceDir = False):
         self._processorName = 'Sentinel-2 Level 2A Prototype Processor (Sen2Cor)'
-        self._processorVersion = '2.2.0'
-        self._processorDate = '2016.03.31'
+        self._processorVersion = '2.2.1'
+        self._processorDate = '2016.04.29'
         self._productVersion = '13.1'
         self._logger = logger
         self._logLevel = 'INFO'
@@ -49,7 +49,13 @@ class L2A_Config(object):
 
             self._sourceDir = sourceDir
             self._configDir = os.path.join(scriptDir, 'cfg')
+            if not os.path.exists(self._configDir):
+                os.mkdir(self._configDir)
+
             self._logDir = os.path.join(self._home, 'log')
+            if not os.path.exists(self._logDir):
+                os.mkdir(self._logDir)
+
             self._configFn = os.path.join(self._home, 'cfg', 'L2A_GIPP.xml')
             self.configSC = os.path.join(self._configDir, 'L2A_CAL_SC_GIPP.xml')
             self.configAC = os.path.join(self._configDir, 'L2A_CAL_AC_GIPP.xml')
@@ -62,7 +68,7 @@ class L2A_Config(object):
             self._nrTiles = None
             self._nrProcs = None
             self._processingStatusFn = os.path.join(self._logDir, '.progress')
-            self._processingEstimationFn = os.path.join(self._configDir, '.estimation')
+            self._processingEstimationFn = os.path.join(self._logDir, '.estimation')
             
             if os.path.isfile(self._processingEstimationFn) == False:
             # init processing estimation file:

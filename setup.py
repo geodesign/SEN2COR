@@ -11,7 +11,7 @@
 #   'python setup.py install' and follow the instructions ...
 #
 
-from setuptools import setup
+from setuptools import setup, find_packages
 from distutils.dir_util import mkpath
 from distutils.file_util import copy_file
 import os, sys, platform
@@ -20,8 +20,8 @@ name = 'sen2cor'
 #
 # This needs to be changed with each new version:
 # ------------------------------------------------
-version = '2.2.0'
-longVersion = '02.02.00'
+version = '2.2.1'
+longVersion = '02.02.01'
 #
 # Do not change anything below:
 # ----------------------------------------------------------------------------
@@ -31,7 +31,6 @@ consoleScript3 = 'L2A_Process-' + longVersion + ' = sen2cor.L2A_Process:main'
 
 L2A_Process = 'L2A_Process'
 L2A_Process_Version = L2A_Process + '-' + version
-
 
 def copyConfiguration():
     sys.stdout.write('\nSEN2COR ' + version + ' setup script:\n')
@@ -157,10 +156,7 @@ setup(
     version=version,
     description='sen2cor: Sentinel 2 Level 2A Prototype Processor',
     long_description=open('README.md').read(),
-    author='Telespazio VEGA Deutschland GmbH',
-    author_email='sen2cor@telespazio-vega.de',
-    url='www.telespazio-vega.de',
-    packages=['sen2cor'],
+    packages=find_packages(),
     include_package_data=True,
     platforms=['linux-x86_64', 'macosx-10.5-x86_64', 'win-amd64'],
     entry_points={
@@ -212,9 +208,9 @@ elif system == 'Windows':
     targetfolder = os.path.join(sys.prefix, 'Scripts')
     cfghome = os.path.join(os.environ['USERPROFILE'], 'documents')
 
+os.system('conda install --yes -c sunpy glymur')
+os.system('conda install --yes libgdal')
 os.system('conda install --yes gdal')
-os.system('conda install --yes krb5')
-os.system('conda install --yes --channel https://conda.anaconda.org/sunpy glymur')
 
 # better to do this manually, see SUM section uninstall:
 # os.system('conda clean --yes --tarballs --index-cache --packages --source-cache')
