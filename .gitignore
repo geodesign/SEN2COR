@@ -14,5 +14,5 @@ sen2cor/build/
 .database.*
 *.png
 *.jp2
-sen2cor/L2A_AtmCorr.py
-
+L2A_AtmCorr.py
+.estimation
