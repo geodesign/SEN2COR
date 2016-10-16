@@ -16,3 +16,4 @@ sen2cor/build/
 *.jp2
 L2A_AtmCorr.py
 .estimation
+sen2cor.egg-info/
