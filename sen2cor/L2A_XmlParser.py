@@ -152,6 +152,10 @@ class L2A_XmlParser(object):
 
 
     def export(self):
+        # Abort update of xml file. This currently empties the defaults,
+        # the parser needs deeper refactoring to make this work in a simplified
+        # context.
+        return
         import codecs
         l.acquire()
         try:
