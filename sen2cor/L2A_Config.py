@@ -16,13 +16,15 @@ l = Lock()
 
 
 def getScriptDir(follow_symlinks=True):
-    if getattr(sys, 'frozen', False): # py2exe, PyInstaller, cx_Freeze
-        path = os.path.abspath(sys.executable)
-    else:
-        path = inspect.getabsfile(getScriptDir)
-    if follow_symlinks:
-        path = os.path.realpath(path)
-    return os.path.dirname(path)
+    # Override script dir location to be pakage based.
+    return os.path.dirname(os.path.abspath(__file__))
+    #if getattr(sys, 'frozen', False): # py2exe, PyInstaller, cx_Freeze
+        #path = os.path.abspath(sys.executable)
+    #else:
+        #path = inspect.getabsfile(getScriptDir)
+    #if follow_symlinks:
+        #path = os.path.realpath(path)
+    #return os.path.dirname(path)
 
 
 class L2A_Config(object):
@@ -36,6 +38,7 @@ class L2A_Config(object):
         self._logLevel = 'INFO'
         self._sc_lp_blu = 1.0
         self._tEstimation = 0.0
+        sourceDir = getScriptDir()
 
         if(sourceDir):
             try:
@@ -56,7 +59,7 @@ class L2A_Config(object):
             if not os.path.exists(self._logDir):
                 os.mkdir(self._logDir)
 
-            self._configFn = os.path.join(self._home, 'cfg', 'L2A_GIPP.xml')
+            self._configFn = os.path.join(self._home, 'sen2cor', 'cfg', 'L2A_GIPP.xml')
             self.configSC = os.path.join(self._configDir, 'L2A_CAL_SC_GIPP.xml')
             self.configAC = os.path.join(self._configDir, 'L2A_CAL_AC_GIPP.xml')
 
@@ -70,16 +73,16 @@ class L2A_Config(object):
             self._processingStatusFn = os.path.join(self._logDir, '.progress')
             self._processingEstimationFn = os.path.join(self._logDir, '.estimation')
 
-            if os.path.isfile(self._processingEstimationFn) == False:
-            # init processing estimation file:
-                config = ConfigParser()
-                config.add_section('time estimation')
-                config.set('time estimation','t_est_60', self._tEst60)
-                config.set('time estimation','t_est_20', self._tEst20)
-                config.set('time estimation','t_est_10', self._tEst10)
-                configFile = open(self._processingEstimationFn, 'w')
-                config.write(configFile)
-                configFile.close()
+            #if os.path.isfile(self._processingEstimationFn) == False:
+            ## init processing estimation file:
+                #config = ConfigParser()
+                #config.add_section('time estimation')
+                #config.set('time estimation','t_est_60', self._tEst60)
+                #config.set('time estimation','t_est_20', self._tEst20)
+                #config.set('time estimation','t_est_10', self._tEst10)
+                #configFile = open(self._processingEstimationFn, 'w')
+                #config.write(configFile)
+                #configFile.close()
             self._ncols = -1
             self._nrows = -1
             self._nbnds = -1
