@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 #
 # sen2cor setup script
-# 
-# usage: 
+#
+# usage:
 # to build distribution for windows:
 # 	'python setup.py sdist --formats=zip'
 # else:
@@ -158,74 +158,79 @@ setup(
     long_description=open('README.md').read(),
     packages=find_packages(),
     include_package_data=True,
-    platforms=['linux-x86_64', 'macosx-10.5-x86_64', 'win-amd64'],
-    entry_points={
-        'console_scripts': [consoleScript1, consoleScript2, consoleScript3, ]
-    },
-    zip_safe=False,
+    install_requires=[
+        'scipy',
+        'lxml',
+        'psutil',
+    ],
+    #platforms=['linux-x86_64', 'macosx-10.5-x86_64', 'win-amd64'],
+    #entry_points={
+        #'console_scripts': [consoleScript1, consoleScript2, consoleScript3, ]
+    #},
+    #zip_safe=False,
 )
 
-try:
-    sys.argv[1] == True
-except:
-    sys.stderr.write('argument must either be "sdist" or "install ..."\n')
-    sys.exit(0)
-if (sys.argv[1] != 'install'):
-    sys.exit(0)
+#try:
+    #sys.argv[1] == True
+#except:
+    #sys.stderr.write('argument must either be "sdist" or "install ..."\n')
+    #sys.exit(0)
+#if (sys.argv[1] != 'install'):
+    #sys.exit(0)
 
-system = platform.system()
-if system == 'Windows':
-    prefix = os.path.join(sys.prefix, 'Lib', 'site-packages')
-else:
-    prefix = os.path.join(sys.prefix, 'lib', 'python2.7', 'site-packages')
+#system = platform.system()
+#if system == 'Windows':
+    #prefix = os.path.join(sys.prefix, 'Lib', 'site-packages')
+#else:
+    #prefix = os.path.join(sys.prefix, 'lib', 'python2.7', 'site-packages')
 
-modulefolder = os.path.join(prefix, name + '-' + version + '-py2.7.egg/sen2cor')
-buildfolder = os.path.join(modulefolder, 'build')
-gdal_data = os.path.join(modulefolder, 'cfg', 'gdal_data')
+#modulefolder = os.path.join(prefix, name + '-' + version + '-py2.7.egg/sen2cor')
+#buildfolder = os.path.join(modulefolder, 'build')
+#gdal_data = os.path.join(modulefolder, 'cfg', 'gdal_data')
 
-if system == 'Darwin':
-    platform = 'lib.macosx-10.5-x86_64-2.7'
-    libopj2 = 'libopenjp2.dylib'
-    libAtmCor = 'L2A_AtmCorr.so'
-    targetfolder = os.path.join(sys.prefix, 'lib')
-    try:
-        cfghome = os.environ['XDG_CONFIG_HOME']
-    except:
-        cfghome = os.environ['HOME']
-elif system == 'Linux':
-    platform = 'lib.linux-x86_64-2.7'
-    libopj2 = 'libopenjp2.so'
-    libAtmCor = 'L2A_AtmCorr.so'
-    targetfolder = os.path.join(sys.prefix, 'lib')
-    try:
-        cfghome = os.environ['XDG_CONFIG_HOME']
-    except:
-        cfghome = os.environ['HOME']
-elif system == 'Windows':
-    platform = 'lib.win-amd64-2.7'
-    libopj2 = 'openjp2.dll'
-    libAtmCor = 'L2A_AtmCorr.pyd'
-    targetfolder = os.path.join(sys.prefix, 'Scripts')
-    cfghome = os.path.join(os.environ['USERPROFILE'], 'documents')
+#if system == 'Darwin':
+    #platform = 'lib.macosx-10.5-x86_64-2.7'
+    #libopj2 = 'libopenjp2.dylib'
+    #libAtmCor = 'L2A_AtmCorr.so'
+    #targetfolder = os.path.join(sys.prefix, 'lib')
+    #try:
+        #cfghome = os.environ['XDG_CONFIG_HOME']
+    #except:
+        #cfghome = os.environ['HOME']
+#elif system == 'Linux':
+    #platform = 'lib.linux-x86_64-2.7'
+    #libopj2 = 'libopenjp2.so'
+    #libAtmCor = 'L2A_AtmCorr.so'
+    #targetfolder = os.path.join(sys.prefix, 'lib')
+    #try:
+        #cfghome = os.environ['XDG_CONFIG_HOME']
+    #except:
+        #cfghome = os.environ['HOME']
+#elif system == 'Windows':
+    #platform = 'lib.win-amd64-2.7'
+    #libopj2 = 'openjp2.dll'
+    #libAtmCor = 'L2A_AtmCorr.pyd'
+    #targetfolder = os.path.join(sys.prefix, 'Scripts')
+    #cfghome = os.path.join(os.environ['USERPROFILE'], 'documents')
 
-os.system('conda install --yes -c sunpy glymur')
-os.system('conda install --yes libgdal')
-os.system('conda install --yes gdal')
+#os.system('conda install --yes -c sunpy glymur')
+#os.system('conda install --yes libgdal')
+#os.system('conda install --yes gdal')
 
-# better to do this manually, see SUM section uninstall:
-# os.system('conda clean --yes --tarballs --index-cache --packages --source-cache')
+## better to do this manually, see SUM section uninstall:
+## os.system('conda clean --yes --tarballs --index-cache --packages --source-cache')
 
-libOpj2Source = os.path.join(buildfolder, platform, libopj2)
-libAtmSource = os.path.join(buildfolder, platform, libAtmCor)
-libOpj2Target = os.path.join(targetfolder, libopj2)
-libAtmTarget = os.path.join(modulefolder, libAtmCor)
-copy_file(libOpj2Source, libOpj2Target)
-copy_file(libAtmSource, libAtmTarget)
-if copyConfiguration() == True:
-    sys.stdout.write('Installation sucessfully performed.\n')
-else:
-    sys.stdout.write('Errors during installation occurred.\n')
-sys.exit(0)
+#libOpj2Source = os.path.join(buildfolder, platform, libopj2)
+#libAtmSource = os.path.join(buildfolder, platform, libAtmCor)
+#libOpj2Target = os.path.join(targetfolder, libopj2)
+#libAtmTarget = os.path.join(modulefolder, libAtmCor)
+#copy_file(libOpj2Source, libOpj2Target)
+#copy_file(libAtmSource, libAtmTarget)
+#if copyConfiguration() == True:
+    #sys.stdout.write('Installation sucessfully performed.\n')
+#else:
+    #sys.stdout.write('Errors during installation occurred.\n')
+#sys.exit(0)
 
-if __name__ == '__main__':
-    pass
+#if __name__ == '__main__':
+    #pass
