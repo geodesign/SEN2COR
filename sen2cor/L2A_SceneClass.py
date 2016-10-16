@@ -7,7 +7,7 @@ from lxml import objectify
 from L2A_Library import *
 from L2A_XmlParser import L2A_XmlParser
 from multiprocessing import Lock
-import cPickle as pickle
+import pickle
 import os
 l = Lock()
 set_printoptions(precision = 7, suppress = True)
@@ -92,13 +92,14 @@ class L2A_SceneClass(object):
         self.logger.info('Storing final Cloud Confidence Mask')
         self.tables.setBand(self.tables.CLD,(self.confidenceMaskCloud*100+0.5).astype(uint8))
         try:
+            pass
             # add L2A quality info on tile level:
-            self.updateQualityIndicators(1, 'T2A')
+            #self.updateQualityIndicators(1, 'T2A')
             # add L2A quality info on user level:
-            xp = L2A_XmlParser(self.config, 'DS2A')
-            ti = xp.getTree('Image_Data_Info', 'Tiles_Information')
-            nrTilesProcessed = len(ti.Tile_List.Tile)
-            self.updateQualityIndicators(nrTilesProcessed, 'UP2A')
+            #xp = L2A_XmlParser(self.config, 'DS2A')
+            #ti = xp.getTree('Image_Data_Info', 'Tiles_Information')
+            #nrTilesProcessed = len(ti.Tile_List.Tile)
+            #self.updateQualityIndicators(nrTilesProcessed, 'UP2A')
         except:
             stdoutWrite('error in updating quality indicators\n')
             self.logger.error('error in updating quality indicators')
@@ -108,9 +109,9 @@ class L2A_SceneClass(object):
         picFn = os.path.join(L2A_TILE_ID,'configPic.p')
         self.config.logger = None
         try:
-            f = open(picFn, 'wb')
-            pickle.dump(self.config, f, 2)
-            f.close()
+            #f = open(picFn, 'wb')
+            #pickle.dump(self.config, f, 2)
+            #f.close()
             self.config.logger = self.logger
         except:
             self.config.logger = self.logger
