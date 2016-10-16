@@ -3866,8 +3866,8 @@ class L2A_Config(object):
         from xml.etree import ElementTree as ET
         try:
             tree = ET.parse(self.configFn)
-        except Exception, inst:
-            self.logger.exception("Unexpected error opening %s: %s", self.configFn, inst)
+        except Exception:
+            self.logger.exception("Unexpected error opening %s", self.configFn)
             self.logger.fatal('Error in XML document')
         doc = tree.getroot()
         return doc

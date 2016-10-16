@@ -121,10 +121,9 @@ class L2A_XmlParser(object):
             objectify.parse(self._xmlFn, parser)
             self._logger.info('metadata file is valid')
             ret = True
-        except etree.XMLSyntaxError, err:
+        except etree.XMLSyntaxError:
             stdoutWrite('Metadata file is invalid, see report file for details.\n')
             self._logger.error('Schema file: %s' % self._scheme)
-            self._logger.error('Details: %s' % str(err))
             ret = False
         except:
             stdoutWrite('Unspecific Error in metadata.\n')
