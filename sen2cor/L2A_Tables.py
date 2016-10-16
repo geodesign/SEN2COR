@@ -8,7 +8,7 @@ import warnings
 import subprocess
 import sys, os, tempfile, logging, shutil
 import glob
-from L2A_Library import *
+from sen2cor.L2A_Library import *
 from time import sleep
 import glymur
 from skimage.measure import block_reduce
@@ -19,7 +19,7 @@ from tables.description import *
 from shutil import copyfile, copytree
 from scipy.ndimage.interpolation import zoom
 from lxml import etree, objectify
-from L2A_XmlParser import L2A_XmlParser
+from sen2cor.L2A_XmlParser import L2A_XmlParser
 
 from subprocess import CalledProcessError
 from osgeo.gdal_array import BandReadAsArray

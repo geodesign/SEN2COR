@@ -4,8 +4,8 @@ from numpy import *
 import fnmatch
 import sys, os, logging, inspect
 from configparser import ConfigParser
-from L2A_XmlParser import L2A_XmlParser
-from L2A_Library import stdoutWrite, stderrWrite
+from sen2cor.L2A_XmlParser import L2A_XmlParser
+from sen2cor.L2A_Library import stdoutWrite, stderrWrite
 from lxml import etree, objectify
 from time import strftime
 from datetime import datetime

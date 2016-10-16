@@ -9,13 +9,13 @@ import sys, os, logging, fnmatch, warnings, platform, multiprocessing
 import cPickle as pickle
 from shutil import copyfile
 from time import time
-from L2A_Logger import getLevel
-from L2A_Schedule import L2A_Schedule
-from L2A_Config import L2A_Config, getScriptDir
-from L2A_XmlParser import L2A_XmlParser
-from L2A_Library import stdoutWrite, stderrWrite
-from L2A_Manifest import L2A_Manifest
-from L2A_ProcessTile import SUCCESS, FAILURE
+from sen2cor.L2A_Logger import getLevel
+from sen2cor.L2A_Schedule import L2A_Schedule
+from sen2cor.L2A_Config import L2A_Config, getScriptDir
+from sen2cor.L2A_XmlParser import L2A_XmlParser
+from sen2cor.L2A_Library import stdoutWrite, stderrWrite
+from sen2cor.L2A_Manifest import L2A_Manifest
+from sen2cor.L2A_ProcessTile import SUCCESS, FAILURE
 
 warnings.filterwarnings("ignore")
 formatter = logging.Formatter('<check>\n<inspection execution=\"%(asctime)s\" level=\"%(levelname)s\" process=\"%(process)d\" module=\"%(module)s\" function=\"%(funcName)s\" line=\"%(lineno)d\"/>\n<message contentType=\"Text\">%(message)s</message>\n</check>')

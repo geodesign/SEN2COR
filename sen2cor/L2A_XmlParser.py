@@ -1,7 +1,7 @@
 from numpy import *
 import os, sys
 from lxml import etree, objectify
-from L2A_Library import stdoutWrite, stderrWrite
+from sen2cor.L2A_Library import stdoutWrite, stderrWrite
 from multiprocessing import Lock
 l = Lock()
 

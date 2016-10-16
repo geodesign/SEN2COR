@@ -8,13 +8,13 @@ import os, logging
 from time import time
 from datetime import datetime
 
-from L2A_Manifest import L2A_Manifest
-from L2A_Tables import L2A_Tables
-from L2A_SceneClass import L2A_SceneClass
-from L2A_AtmCorr import L2A_AtmCorr
-from L2A_XmlParser import L2A_XmlParser
-from L2A_Library import stdoutWrite, stderrWrite
-from L2A_Logger import SubProcessLogHandler, getLevel
+from sen2cor.L2A_Manifest import L2A_Manifest
+from sen2cor.L2A_Tables import L2A_Tables
+from sen2cor.L2A_SceneClass import L2A_SceneClass
+from sen2cor.L2A_AtmCorr import L2A_AtmCorr
+from sen2cor.L2A_XmlParser import L2A_XmlParser
+from sen2cor.L2A_Library import stdoutWrite, stderrWrite
+from sen2cor.L2A_Logger import SubProcessLogHandler, getLevel
 
 import multiprocessing
 import cPickle as pickle

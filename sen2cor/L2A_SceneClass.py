@@ -4,8 +4,8 @@ from scipy.ndimage.morphology import *
 from scipy.ndimage.interpolation import *
 from scipy.ndimage.filters import median_filter, gaussian_filter
 from lxml import objectify
-from L2A_Library import *
-from L2A_XmlParser import L2A_XmlParser
+from sen2cor.L2A_Library import *
+from sen2cor.L2A_XmlParser import L2A_XmlParser
 from multiprocessing import Lock
 import pickle
 import os

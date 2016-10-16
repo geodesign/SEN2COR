@@ -8,7 +8,7 @@ import fnmatch
 import string
 from psutil import cpu_count, virtual_memory
 from time import sleep
-from L2A_ProcessTile import L2A_ProcessTile, SUCCESS, FAILURE
+from sen2cor.L2A_ProcessTile import L2A_ProcessTile, SUCCESS, FAILURE
 from multiprocessing import Lock, Queue, active_children
 
 class L2A_Schedule():
@@ -17,7 +17,7 @@ class L2A_Schedule():
         self._maxProc = config.nrProcs
         self._res = config.resolution
         self._targetDir = config.L2A_UP_DIR
-        from L2A_Logger import LogQueueReader
+        from sen2cor.L2A_Logger import LogQueueReader
         self._queue = Queue()
         self._msgQueue = Queue()
         log_queue_reader = LogQueueReader(self._queue)
