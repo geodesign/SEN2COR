@@ -3,7 +3,7 @@
 from numpy import *
 import fnmatch
 import sys, os, logging, inspect
-import ConfigParser
+from configparser import ConfigParser
 from L2A_XmlParser import L2A_XmlParser
 from L2A_Library import stdoutWrite, stderrWrite
 from lxml import etree, objectify
