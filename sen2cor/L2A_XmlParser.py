@@ -15,7 +15,7 @@ class L2A_XmlParser(object):
         self._root = None
         self._tree = None
         self._scheme = None
-        
+
         l.acquire()
         try:
             doc = objectify.parse(config.configFn)
@@ -30,7 +30,7 @@ class L2A_XmlParser(object):
             # gippScheme = cs.GIPP_Scheme.text
             # scScheme = cs.SC_Scheme.text
             # acScheme = cs.AC_Scheme.text
-    
+
             if(product == 'UP1C'):
                 self._xmlFn = config.L1C_UP_MTD_XML
                 self._scheme = upScheme1c
@@ -57,15 +57,15 @@ class L2A_XmlParser(object):
                 self._scheme = 'L2A_CAL_SC_GIPP.xsd'
             elif(product == 'AC_GIPP'):
                 self._xmlFn = config.configAC
-                self._scheme = "L2A_CAL_AC_GIPP.xsd"   
+                self._scheme = "L2A_CAL_AC_GIPP.xsd"
             elif(product == 'Manifest'):
                 self._xmlFn = config.L2A_MANIFEST_SAFE
-                self._scheme = 'S2-PDGS-TAS-DI-PSD-V13.1_SAFE/resources/xsd/int/esa/safe/sentinel/1.1/sentinel-2/msi/archive_l2a_user_product/xfdu.xsd'     
+                self._scheme = 'S2-PDGS-TAS-DI-PSD-V13.1_SAFE/resources/xsd/int/esa/safe/sentinel/1.1/sentinel-2/msi/archive_l2a_user_product/xfdu.xsd'
             else:
                 self._logger.fatal('wrong identifier for xml structure: ' + product)
         finally:
             l.release()
-             
+
         self.setRoot();
 
 
@@ -79,7 +79,7 @@ class L2A_XmlParser(object):
             ret = False
         finally:
             l.release()
-            
+
         return ret
 
 
@@ -94,23 +94,23 @@ class L2A_XmlParser(object):
             root = False
         finally:
             l.release()
-            
+
         return root
 
 
     def getTree(self, key, subkey):
         l.acquire()
         try:
-            tree = self._root[key]    
+            tree = self._root[key]
             ret = tree['{}' + subkey]
         except:
             ret = False
         finally:
             l.release()
-            
+
         return ret
-    
-    
+
+
     def validate(self):
         fn = os.path.basename(self._xmlFn)
         self._logger.info('validating metadata file %s against scheme' % fn)
@@ -119,7 +119,7 @@ class L2A_XmlParser(object):
             schema = etree.XMLSchema(file = os.path.join(self._config.configDir, self._scheme))
             parser = etree.XMLParser(schema = schema)
             objectify.parse(self._xmlFn, parser)
-            self._logger.info('metadata file is valid')                
+            self._logger.info('metadata file is valid')
             ret = True
         except etree.XMLSyntaxError, err:
             stdoutWrite('Metadata file is invalid, see report file for details.\n')
@@ -130,9 +130,9 @@ class L2A_XmlParser(object):
             stdoutWrite('Unspecific Error in metadata.\n')
             self._logger.error('unspecific error in metadata')
             ret = False
-        finally:                  
+        finally:
             l.release()
-            
+
         return ret
 
 
@@ -148,26 +148,26 @@ class L2A_XmlParser(object):
             ret = False
         finally:
             l.release()
-            
+
         return ret
-        
+
 
     def export(self):
         import codecs
         l.acquire()
         try:
-            outfile = codecs.open(self._xmlFn, 'w', 'utf-8')         
+            outfile = codecs.open(self._xmlFn, 'w', 'utf-8')
             outfile.write('<?xml version="1.0"  encoding="UTF-8"?>\n')
             objectify.deannotate(self._root, xsi_nil=True, cleanup_namespaces=True)
             outstr = etree.tostring(self._root, pretty_print=True)
-            outfile.write(outstr)        
+            outfile.write(outstr)
             outfile.close()
         finally:
             l.release()
 
-        return self.setRoot()            
+        return self.setRoot()
 
-    
+
 
     def convert(self):
         import codecs
@@ -187,7 +187,7 @@ class L2A_XmlParser(object):
         outstr = outstr.replace('</Product_Organisation',          '</L2A_Product_Organisation')
         outstr = outstr.replace('</Product_Image_Characteristics', '</L2A_Product_Image_Characteristics')
         outstr = outstr.replace('</Pixel_Level_QI',                '</L1C_Pixel_Level_QI')
-        
+
         if self._product == 'T2A':
             outstr = outstr.replace('Image_Content_QI>', 'L1C_Image_Content_QI>')
         if self._product == 'UP2A':
@@ -196,7 +196,7 @@ class L2A_XmlParser(object):
                                 '<n1:L2A_Auxiliary_Data_Info/>')
             outstr = outstr.replace('</n1:Quality_Indicators_Info>', '</n1:Quality_Indicators_Info>\n'\
                                 '<n1:L2A_Quality_Indicators_Info/>')
-            
+
         l.acquire()
         try:
             outfile = codecs.open(self._xmlFn, 'w', 'utf-8')
@@ -208,5 +208,5 @@ class L2A_XmlParser(object):
             self._logger.error('error in writing file: %s\n' % self._xmlFn)
         finally:
             l.release()
- 
+
         return self.setRoot()

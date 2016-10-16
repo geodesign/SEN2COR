@@ -26,7 +26,7 @@ def getScriptDir(follow_symlinks=True):
 
 
 class L2A_Config(object):
-    
+
     def __init__(self, logger, sourceDir = False):
         self._processorName = 'Sentinel-2 Level 2A Prototype Processor (Sen2Cor)'
         self._processorVersion = '2.2.1'
@@ -41,11 +41,11 @@ class L2A_Config(object):
             try:
                 self._home = os.environ['SEN2COR_HOME']
             except:
-                self._home = os.path.dirname(getScriptDir())               
+                self._home = os.path.dirname(getScriptDir())
             try:
                 scriptDir = os.environ['SEN2COR_BIN']
             except:
-                scriptDir = getScriptDir()    
+                scriptDir = getScriptDir()
 
             self._sourceDir = sourceDir
             self._configDir = os.path.join(scriptDir, 'cfg')
@@ -59,7 +59,7 @@ class L2A_Config(object):
             self._configFn = os.path.join(self._home, 'cfg', 'L2A_GIPP.xml')
             self.configSC = os.path.join(self._configDir, 'L2A_CAL_SC_GIPP.xml')
             self.configAC = os.path.join(self._configDir, 'L2A_CAL_AC_GIPP.xml')
-            
+
             self._atmDataFn = None
             self._tEst60 = 150.0
             self._tEst20 = self._tEst60 * 8.0
@@ -69,7 +69,7 @@ class L2A_Config(object):
             self._nrProcs = None
             self._processingStatusFn = os.path.join(self._logDir, '.progress')
             self._processingEstimationFn = os.path.join(self._logDir, '.estimation')
-            
+
             if os.path.isfile(self._processingEstimationFn) == False:
             # init processing estimation file:
                 config = ConfigParser.RawConfigParser()
@@ -165,7 +165,7 @@ class L2A_Config(object):
             self._L1C_TILE_ID = None
             self._L2A_UP_MTD_XML = None
             self._L2A_DS_MTD_XML = None
-            self._L2A_DS_MTD_LST = []            
+            self._L2A_DS_MTD_LST = []
             self._L2A_TILE_MTD_XML = None
             self._L2A_UP_ID = None
             self._L2A_DS_LST = []
@@ -183,8 +183,8 @@ class L2A_Config(object):
             self._aerosolType = None
             self._midLatitude = None
             self._ozoneContent = None
-            self._waterVapour = None    
-            self._ozoneMean = None        
+            self._waterVapour = None
+            self._ozoneMean = None
             return
 
     def get_ozone_mean(self):
@@ -276,13 +276,13 @@ class L2A_Config(object):
         if self.selectedTile != None:
             self._nrTiles = 1
             return self._nrTiles
-        # else:    
+        # else:
         self._nrTiles = 0
         filemask = 'S2A_*_L1C_*'
         GRANULE = 'GRANULE'
         granuleDir = os.path.join(self.workDir, GRANULE)
         filelist = sorted(os.listdir(granuleDir))
-        for tile in filelist:      
+        for tile in filelist:
             if fnmatch.fnmatch(tile, filemask) == False:
                 continue
             self._nrTiles += 1
@@ -295,7 +295,7 @@ class L2A_Config(object):
             self._nrProcs = cpu_count()
         else:
             self._nrProcs = int(nrProcs)
-        return self._nrProcs        
+        return self._nrProcs
 
 
     def set_nr_tiles(self, value):
@@ -376,12 +376,12 @@ class L2A_Config(object):
 
     def get_logger(self):
         return self._logger
- 
- 
+
+
     def set_logger(self, value):
         self._logger = value
- 
- 
+
+
     def del_logger(self):
         del self._logger
 
@@ -1967,7 +1967,7 @@ class L2A_Config(object):
 
 
     def set_config_fn(self, value):
-        self._configFn = value 
+        self._configFn = value
 
     def set_input_fn(self, value):
         self._inputFn = os.path.join(self._dataDir, value)
@@ -2581,7 +2581,7 @@ class L2A_Config(object):
 
     def get_l2a_ds_mtd_xml(self):
         try:
-            tileId = self._L2A_TILE_ID[25:40]        
+            tileId = self._L2A_TILE_ID[25:40]
             for ref in self._L2A_DS_MTD_LST:
                 if tileId in ref:
                     return ref
@@ -2771,7 +2771,7 @@ class L2A_Config(object):
     ozoneContent = property(get_ozone_content, set_ozone_content, del_ozone_content, "ozoneContent's docstring")
     waterVapour = property(get_water_vapour, set_water_vapour, del_water_vapour, "waterVapour's docstring")
     ozoneMean = property(get_ozone_mean, set_ozone_mean, del_ozone_mean, "ozoneMean's docstring")
-    
+
     def createOrUpdateL2A_UserProduct(self):
         firstInit = False
         L1C_UP_MASK = '*1C_*'
@@ -2789,12 +2789,12 @@ class L2A_Config(object):
         L1C_DS_MASK = '*_L1C_*'
         dirlist = sorted(os.listdir(L1C_DS_DIR))
         found = False
-        
+
         for dirname in dirlist:
             if(fnmatch.fnmatch(dirname, L1C_DS_MASK) == True):
                 found = True
                 break
-        
+
         if found == False:
             self.logger.fatal('No metadata in datastrip.')
             return False
@@ -2823,8 +2823,8 @@ class L2A_Config(object):
         if targetDir != 'DEFAULT':
             dirname = targetDir
             if(os.path.exists(dirname) == False):
-                os.mkdir(dirname)            
-            
+                os.mkdir(dirname)
+
         L2A_UP_DIR = os.path.join(dirname, L2A_UP_ID)
         self.L2A_UP_DIR = L2A_UP_DIR
         self.L2A_UP_ID = L2A_UP_ID
@@ -2856,7 +2856,7 @@ class L2A_Config(object):
             L2A_UP_DIR_ = L2A_UP_DIR
             L2A_INSPIRE_XML_ = L2A_INSPIRE_XML
             L2A_MANIFEST_SAFE_ = L2A_MANIFEST_SAFE
-            
+
         if(os.path.exists(os.path.join(L2A_UP_DIR, GRANULE)) == False):
             firstInit = True
             l.acquire()
@@ -2864,12 +2864,12 @@ class L2A_Config(object):
                 copytree(os.path.join(L1C_UP_DIR_, AUX_DATA),  os.path.join(L2A_UP_DIR_, AUX_DATA))
                 copytree(os.path.join(L1C_UP_DIR_, DATASTRIP), os.path.join(L2A_UP_DIR_, DATASTRIP))
                 copytree(os.path.join(L1C_UP_DIR_, HTML), os.path.join(L2A_UP_DIR_, HTML))
-                copytree(os.path.join(L1C_UP_DIR_, REP_INFO), os.path.join(L2A_UP_DIR_, REP_INFO))    
+                copytree(os.path.join(L1C_UP_DIR_, REP_INFO), os.path.join(L2A_UP_DIR_, REP_INFO))
                 # remove the L1C xsds:
                 S2_mask = 'S2_*.xsd'
                 repdir = os.path.join(L2A_UP_DIR, REP_INFO)
                 filelist = os.listdir(repdir)
-                
+
                 for filename in filelist:
                     if(fnmatch.fnmatch(filename, S2_mask) == True):
                         os.remove(os.path.join(repdir, filename))
@@ -2887,15 +2887,15 @@ class L2A_Config(object):
         except:
             self.logger.fatal('L1C input is not accessible')
             return False
-        
+
         for filename in filelist:
             if(fnmatch.fnmatch(filename, S2A_mask) == True):
                 found = True
                 break
         if found == False:
-            self.logger.fatal('No metadata for user product')    
+            self.logger.fatal('No metadata for user product')
             return False
-    
+
         # prepare L2A User Product metadata file
         fn_L1C = os.path.join(L1C_UP_DIR, filename)
         fn_L2A = filename[:4] + 'USER' + filename[8:]
@@ -2903,8 +2903,8 @@ class L2A_Config(object):
         fn_L2A = os.path.join(L2A_UP_DIR, fn_L2A)
         self.L1C_UP_MTD_XML = fn_L1C
         self.L2A_UP_MTD_XML = fn_L2A
-         
-        # get the bandIndex    
+
+        # get the bandIndex
         if self._resolution == 10:
             bandIndex = [1,2,3,7]
             self._ch940 = [0,0,0,0,0,0]
@@ -2912,12 +2912,12 @@ class L2A_Config(object):
             bandIndex = [0,1,2,3,4,5,6,8,9,10,11,12]
             self._ch940 = [8,8,9,9,0,0]
         # this must always be initialized:
-        xp = L2A_XmlParser(self, 'UP1C') 
-        pic = xp.getTree('General_Info', 'Product_Image_Characteristics')        
+        xp = L2A_XmlParser(self, 'UP1C')
+        pic = xp.getTree('General_Info', 'Product_Image_Characteristics')
         self._dnScale = float32(pic.QUANTIFICATION_VALUE.text)
         rc = pic.Reflectance_Conversion
         # The earth sun distance correction factor, already squared:
-        self._d2 = float32(rc.U.text)     
+        self._d2 = float32(rc.U.text)
         node = pic.Reflectance_Conversion.Solar_Irradiance_List
         i=0
         self._e0 = zeros(size(bandIndex), float32)
@@ -2928,14 +2928,14 @@ class L2A_Config(object):
             i+=1
 
         if firstInit == True:
-            # copy L2A schemes from config_dir into rep_info:    
+            # copy L2A schemes from config_dir into rep_info:
             xp = L2A_XmlParser(self, 'GIPP')
             cs = xp.getRoot('Common_Section')
-    
+
             dirname, basename = os.path.split(cs.UP_Scheme_2A.text)
             copyfile(os.path.join(self.configDir, cs.UP_Scheme_2A.text), os.path.join(L2A_UP_DIR, REP_INFO, basename))
-            dirname, basename = os.path.split(cs.Tile_Scheme_2A.text)            
-            copyfile(os.path.join(self.configDir, cs.Tile_Scheme_2A.text), os.path.join(L2A_UP_DIR, REP_INFO, basename))          
+            dirname, basename = os.path.split(cs.Tile_Scheme_2A.text)
+            copyfile(os.path.join(self.configDir, cs.Tile_Scheme_2A.text), os.path.join(L2A_UP_DIR, REP_INFO, basename))
             dirname, basename = os.path.split(cs.DS_Scheme_2A.text)
             copyfile(os.path.join(self.configDir, cs.DS_Scheme_2A.text), os.path.join(L2A_UP_DIR, REP_INFO, basename))
             # copy L2A User Product metadata file:
@@ -2944,10 +2944,10 @@ class L2A_Config(object):
             xp = L2A_XmlParser(self, 'UP2A')
             if(xp.convert() == False):
                 self.logger.fatal('error in converting user product metadata to level 2A')
-    
-            xp = L2A_XmlParser(self, 'UP2A')  
+
+            xp = L2A_XmlParser(self, 'UP2A')
             pi = xp.getTree('General_Info', 'L2A_Product_Info')
-            del pi.L2A_Product_Organisation.Granule_List[:]            
+            del pi.L2A_Product_Organisation.Granule_List[:]
             # update L2A entries from L1C_UP_MTD_XML:
             pi.PRODUCT_URI = 'http://www.telespazio-vega.de'
             pi.PROCESSING_LEVEL = 'Level-2Ap'
@@ -2957,7 +2957,7 @@ class L2A_Config(object):
             pi.PREVIEW_IMAGE_URL = 'http://www.telespazio-vega.de'
             qo = pi.Query_Options
             qo.Aux_List.attrib['productLevel'] = 'Level-2Ap'
-            pic = xp.getTree('General_Info', 'L2A_Product_Image_Characteristics')        
+            pic = xp.getTree('General_Info', 'L2A_Product_Image_Characteristics')
             L1C_TOA_QUANTIFICATION_VALUE =pic.L1C_L2A_Quantification_Values_List
             qvl = objectify.Element('L1C_L2A_Quantification_Values_List')
             qvl.L1C_TOA_QUANTIFICATION_VALUE = L1C_TOA_QUANTIFICATION_VALUE
@@ -2972,71 +2972,71 @@ class L2A_Config(object):
             qvl.L2A_WVP_QUANTIFICATION_VALUE = str(self._L2A_WVP_QUANTIFICATION_VALUE)
             qvl.L2A_WVP_QUANTIFICATION_VALUE.attrib['unit'] = 'cm'
             pic.L1C_L2A_Quantification_Values_List = qvl
-            
+
             scl = objectify.Element('L2A_Scene_Classification_List')
-            scid = objectify.Element('L2A_Scene_Classification_ID')    
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_NODATA'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '0'
             scl.append(scid)
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')              
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_SATURATED_DEFECTIVE'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '1'
             scl.append(scid)
-    
-            scid = objectify.Element('L2A_Scene_Classification_ID')                  
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_DARK_FEATURE_SHADOW'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '2'
             scl.append(scid)
-    
-            scid = objectify.Element('L2A_Scene_Classification_ID')                  
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_CLOUD_SHADOW'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '3'
-            scl.append(scid)        
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')      
+            scl.append(scid)
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_VEGETATION'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '4'
             scl.append(scid)
-    
-            scid = objectify.Element('L2A_Scene_Classification_ID')                      
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_BARE_SOIL_DESERT'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '5'
             scl.append(scid)
-                            
-            scid = objectify.Element('L2A_Scene_Classification_ID')                  
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_WATER'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '6'
             scl.append(scid)
-                    
-            scid = objectify.Element('L2A_Scene_Classification_ID')                  
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_CLOUD_LOW_PROBA'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '7'
             scl.append(scid)
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')                              
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_CLOUD_MEDIUM_PROBA'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '8'
             scl.append(scid)
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')                              
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_CLOUD_HIGH_PROBA'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '9'
             scl.append(scid)
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')                  
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_THIN_CIRRUS'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '10'
             scl.append(scid)
-            
-            scid = objectify.Element('L2A_Scene_Classification_ID')                            
+
+            scid = objectify.Element('L2A_Scene_Classification_ID')
             scid.L2A_SCENE_CLASSIFICATION_TEXT = 'SC_SNOW_ICE'
             scid.L2A_SCENE_CLASSIFICATION_INDEX = '11'
-            scl.append(scid) 
+            scl.append(scid)
             pic.append(scl)
-    
+
             auxinfo = xp.getRoot('L2A_Auxiliary_Data_Info')
-            auxdata = objectify.Element('Aux_Data')   
+            auxdata = objectify.Element('Aux_Data')
             gipp = objectify.Element('L2A_GIPP_List')
             auxdata.append(gipp)
             auxdata.L2A_PRODUCTION_DEM_TYPE = self.demReference
@@ -3044,7 +3044,7 @@ class L2A_Config(object):
             auxdata.L2A_SNOW_CLIMATOLOGY = self.snowMapReference
             auxinfo.append(auxdata)
             xp.export()
-    
+
         #create datastrip ID:
         S2A_mask = 'S2A_*'
         found = False
@@ -3052,18 +3052,18 @@ class L2A_Config(object):
         dirlist = sorted(os.listdir(L2A_DS_DIR))
         for dirname in dirlist:
             if(fnmatch.fnmatch(dirname, S2A_mask) == True):
-                
+
                 L1C_DS_ID = dirname
                 L2A_DS_ID = L1C_DS_ID[:4] + 'USER' + L1C_DS_ID[8:]
                 L2A_DS_ID = L2A_DS_ID.replace('L1C_', 'L2A_')
                 self.L2A_DS_ID = L2A_DS_ID
-                
+
                 olddir = os.path.join(L2A_DS_DIR, L1C_DS_ID)
                 newdir = os.path.join(L2A_DS_DIR, L2A_DS_ID)
-                    
-                if firstInit == True:                    
+
+                if firstInit == True:
                     os.rename(olddir, newdir)
-            
+
                 #find datastrip metadada, rename and change it:
                 L2A_DS_SUBDIR = newdir
                 filelist = sorted(os.listdir(L2A_DS_SUBDIR))
@@ -3081,7 +3081,7 @@ class L2A_Config(object):
                 oldfile = os.path.join(L2A_DS_SUBDIR, L1C_DS_MTD_XML)
                 newfile = os.path.join(L2A_DS_SUBDIR, L2A_DS_MTD_XML)
                 self.L2A_DS_MTD_XML = newfile
-                
+
                 if firstInit == True:
                     os.rename(oldfile, newfile)
 
@@ -3095,7 +3095,7 @@ class L2A_Config(object):
                         pass
                     xp.export()
                     found = True
-    
+
         if found == False:
             self.logger.fatal('no subdirectory in datastrip')
         if self._selectedTile != None:
@@ -3107,7 +3107,7 @@ class L2A_Config(object):
 
     def create_L2A_Tile(self, tile):
         # generate new Tile ID:
-        GRANULE = 'GRANULE' 
+        GRANULE = 'GRANULE'
         L1C_TILE_ID = tile
         L2A_TILE_ID = L1C_TILE_ID[:4] + 'USER' + L1C_TILE_ID[8:]
         L2A_TILE_ID = L2A_TILE_ID.replace('L1C_', 'L2A_')
@@ -3115,7 +3115,7 @@ class L2A_Config(object):
         self.L2A_TILE_ID = L2A_TILE_ID
         L1C_TILE_ID = os.path.join(self.sourceDir, GRANULE, L1C_TILE_ID)
         L2A_TILE_ID = os.path.join(self.L2A_UP_DIR, GRANULE, L2A_TILE_ID)
-        
+
         if(os.path.exists(L2A_TILE_ID) == False):
             os.mkdir(L2A_TILE_ID)
         else:
@@ -3125,7 +3125,7 @@ class L2A_Config(object):
             for filename in filelist:
                 if(fnmatch.fnmatch(filename, filemask) == True):
                     break
-            
+
             L2A_TILE_MTD_XML = filename
             self.L2A_TILE_MTD_XML = os.path.join(L2A_TILE_ID, L2A_TILE_MTD_XML)
             L1C_TILE_MTD_XML = L2A_TILE_MTD_XML[:4] + 'OPER' + L2A_TILE_MTD_XML[8:]
@@ -3149,58 +3149,58 @@ class L2A_Config(object):
             except:
                 return False
         return True
-    
+
 
     def setTimeEstimation(self, resolution):
         if self.selectedTile != None:
             nrTiles = 1
         else:
             nrTiles = self.nrTiles
-        
+
         factor = float32(nrTiles)
-        
+
         config = ConfigParser.RawConfigParser(allow_no_value=True)
         l.acquire()
-        try:        
+        try:
             config.read(self._processingEstimationFn)
             tEst60 = config.getfloat('time estimation','t_est_60') * factor
             tEst20 = config.getfloat('time estimation','t_est_20') * factor
             tEst10 = config.getfloat('time estimation','t_est_10') * factor
         finally:
             l.release()
-        
+
         if(resolution == 60):
             self._tEstimation = tEst60
         elif(resolution == 20):
             self._tEstimation = tEst20
         elif(resolution == 10):
-            self._tEstimation = (tEst20 + tEst10) 
+            self._tEstimation = (tEst20 + tEst10)
         else:
             self._tEstimation = (tEst60 + tEst20 + tEst10)
         return
 
 
-    def writeTimeEstimation(self, tMeasure):     
+    def writeTimeEstimation(self, tMeasure):
         l.acquire()
         try:
             config = ConfigParser.RawConfigParser()
             config.read(self._processingEstimationFn)
-              
+
             if(self.resolution == 60):
-                tEst = config.getfloat('time estimation','t_est_60')             
+                tEst = config.getfloat('time estimation','t_est_60')
                 tMeasureAsString = str((tEst + tMeasure) / 2.0 )
                 config.set('time estimation','t_est_60', tMeasureAsString)
-                
+
             elif(self.resolution == 20):
-                tEst = config.getfloat('time estimation','t_est_20')             
-                tMeasureAsString = str((tEst + tMeasure) / 2.0 )       
+                tEst = config.getfloat('time estimation','t_est_20')
+                tMeasureAsString = str((tEst + tMeasure) / 2.0 )
                 config.set('time estimation','t_est_20', tMeasureAsString)
-         
+
             elif(self.resolution == 10):
-                tEst = config.getfloat('time estimation','t_est_10')             
+                tEst = config.getfloat('time estimation','t_est_10')
                 tMeasureAsString = str((tEst + tMeasure) / 2.0 )
                 config.set('time estimation','t_est_10', tMeasureAsString)
-    
+
             configFile = open(self._processingEstimationFn, 'w')
             config.write(configFile)
             configFile.close()
@@ -3232,14 +3232,14 @@ class L2A_Config(object):
 
             stdoutWrite('Progress[%%]: %03.2f : ' % tWeighted)
             stdoutWrite('PID-%d, %s, elapsed time[s]: %0.3f\n' % (p.pid, procedure, tDelta.total_seconds()))
-            
+
             f = open(self._processingStatusFn, 'w')
             f.write(str(tWeighted) + '\n')
-            f.close()                
+            f.close()
         except:
             f = open(self._processingStatusFn, 'w')
             f.write('0.0\n')
-            f.close()                
+            f.close()
         finally:
             l.release()
         return
@@ -3260,196 +3260,196 @@ class L2A_Config(object):
 
     ### Snow_map_reference
         node = xp.getTree('Scene_Classification', 'References')
-        
+
         par = node.Snow_Map
         if par is None: self.parNotFound(node)
-        self.snowMapReference = par.text          
-        
+        self.snowMapReference = par.text
+
         node = xp.getTree('Scene_Classification', 'Classificators')
 
         par = node.NO_DATA
         if par is None: self.parNotFound(node)
-        self.noData = int32(par.text)  
-        
+        self.noData = int32(par.text)
+
         par = node.SATURATED_DEFECTIVE
         if par is None: self.parNotFound(node)
-        self.saturatedDefective = int32(par.text)  
+        self.saturatedDefective = int32(par.text)
 
         par = node.DARK_FEATURES
         if par is None: self.parNotFound(node)
-        self.darkFeatures = int32(par.text)  
-        
+        self.darkFeatures = int32(par.text)
+
         par = node.CLOUD_SHADOWS
         if par is None: self.parNotFound(node)
-        self.cloudShadows = int32(par.text)  
+        self.cloudShadows = int32(par.text)
 
         par = node.VEGETATION
         if par is None: self.parNotFound(node)
-        self.vegetation = int32(par.text)  
+        self.vegetation = int32(par.text)
 
         par = node.BARE_SOILS
         if par is None: self.parNotFound(node)
-        self.bareSoils = int32(par.text)  
+        self.bareSoils = int32(par.text)
 
         par = node.WATER
         if par is None: self.parNotFound(node)
-        self.water = int32(par.text)  
-        
+        self.water = int32(par.text)
+
         par = node.LOW_PROBA_CLOUDS
         if par is None: self.parNotFound(node)
-        self.lowProbaClouds = int32(par.text)  
-        
+        self.lowProbaClouds = int32(par.text)
+
         par = node.MEDIUM_PROBA_CLOUDS
         if par is None: self.parNotFound(node)
         self.medProbaClouds = int32(par.text)
-        
+
         par = node.HIGH_PROBA_CLOUDS
         if par is None: self.parNotFound(node)
         self.highProbaClouds = int32(par.text)
-        
+
         par = node.THIN_CIRRUS
         if par is None: self.parNotFound(node)
         self.thinCirrus = int32(par.text)
-        
+
         par = node.SNOW_ICE
         if par is None: self.parNotFound(node)
         self.snowIce = int32(par.text)
-        
+
     ### Thresholds
         node = xp.getTree ('Scene_Classification', 'Thresholds')
-        
+
         par = node.T1_B02
         if par is None: self.parNotFound(node)
         self.T1_B02 = float32(par.text)
-        
+
         par = node.T2_B02
         if par is None: self.parNotFound(node)
         self.T2_B02 = float32(par.text)
-        
+
         par = node.T1_B04
         if par is None: self.parNotFound(node)
         self.T1_B04 = float32(par.text)
-        
+
         par = node.T2_B04
         if par is None: self.parNotFound(node)
         self.T2_B04 = float32(par.text)
-        
+
         par = node.T1_B8A
         if par is None: self.parNotFound(node)
         self.T1_B8A = float32(par.text)
-        
+
         par = node.T2_B8A
         if par is None: self.parNotFound(node)
         self.T2_B8A = float32(par.text)
-        
+
         par = node.T1_B10
         if par is None: self.parNotFound(node)
         self.T1_B10 = float32(par.text)
-        
+
         par = node.T2_B10
         if par is None: self.parNotFound(node)
         self.T2_B10 = float32(par.text)
-        
+
         par = node.T1_B12
         if par is None: self.parNotFound(node)
         self.T1_B12 = float32(par.text)
-        
+
         par = node.T2_B12
         if par is None: self.parNotFound(node)
         self.T2_B12 = float32(par.text)
-        
+
         par = node.T1_NDSI_CLD
         if par is None: self.parNotFound(node)
         self.T1_NDSI_CLD = float32(par.text)
-        
+
         par = node.T2_NDSI_CLD
         if par is None: self.parNotFound(node)
         self.T2_NDSI_CLD = float32(par.text)
-        
+
         par = node.T1_NDSI_SNW
         if par is None: self.parNotFound(node)
         self.T1_NDSI_SNW = float32(par.text)
-        
+
         par = node.T2_NDSI_SNW
         if par is None: self.parNotFound(node)
         self.T2_NDSI_SNW = float32(par.text)
-        
+
         par = node.T1_R_B02_B04
         if par is None: self.parNotFound(node)
         self.T1_R_B02_B04 = float32(par.text)
-        
+
         par = node.T2_R_B02_B04
         if par is None: self.parNotFound(node)
         self.T2_R_B02_B04 = float32(par.text)
-        
+
         par = node.T1_R_B8A_B03
         if par is None: self.parNotFound(node)
         self.T1_R_B8A_B03 = float32(par.text)
-        
+
         par = node.T2_R_B8A_B03
         if par is None: self.parNotFound(node)
         self.T2_R_B8A_B03 = float32(par.text)
-        
+
         par = node.T1_R_B8A_B11
         if par is None: self.parNotFound(node)
         self.T1_R_B8A_B11 = float32(par.text)
-        
+
         par = node.T2_R_B8A_B11
         if par is None: self.parNotFound(node)
         self.T2_R_B8A_B11 = float32(par.text)
-        
+
         par = node.T1_SNOW
         if par is None: self.parNotFound(node)
         self.T1_SNOW = float32(par.text)
-        
+
         par = node.T2_SNOW
         if par is None: self.parNotFound(node)
         self.T2_SNOW = float32(par.text)
-        
+
         par = node.T1_NDVI
         if par is None: self.parNotFound(node)
         self.T1_NDVI = float32(par.text)
-        
+
         par = node.T2_NDVI
         if par is None: self.parNotFound(node)
         self.T2_NDVI = float32(par.text)
-        
+
         par = node.T1_R_B8A_B03
         if par is None: self.parNotFound(node)
         self.T1_R_B8A_B03 = float32(par.text)
-        
+
         par = node.T2_R_B8A_B03
         if par is None: self.parNotFound(node)
         self.T2_R_B8A_B03 = float32(par.text)
-        
+
         par = node.T11_B02
         if par is None: self.parNotFound(node)
         self.T11_B02 = float32(par.text)
-        
+
         par = node.T12_B02
         if par is None: self.parNotFound(node)
         self.T12_B02 = float32(par.text)
-        
+
         par = node.T11_R_B02_B11
         if par is None: self.parNotFound(node)
         self.T11_R_B02_B11 = float32(par.text)
-        
+
         par = node.T12_R_B02_B11
         if par is None: self.parNotFound(node)
         self.T12_R_B02_B11 = float32(par.text)
-        
+
         par = node.T21_B12
         if par is None: self.parNotFound(node)
         self.T21_B12 = float32(par.text)
-        
+
         par = node.T22_B12
         if par is None: self.parNotFound(node)
         self.T22_B12 = float32(par.text)
-        
+
         par = node.T21_R_B02_B11
         if par is None: self.parNotFound(node)
         self.T21_R_B02_B11 = float32(par.text)
-        
+
         par = node.T22_R_B02_B11
         if par is None: self.parNotFound(node)
         self.T22_R_B02_B11 = float32(par.text)
@@ -3457,19 +3457,19 @@ class L2A_Config(object):
         par = node.T_CLOUD_LP
         if par is None: self.parNotFound(node)
         self.T_CLOUD_LP = float32(par.text)
-        
+
         par = node.T_CLOUD_MP
         if par is None: self.parNotFound(node)
         self.T_CLOUD_MP = float32(par.text)
-        
+
         par = node.T_CLOUD_HP
         if par is None: self.parNotFound(node)
         self.T_CLOUD_HP = float32(par.text)
-        
+
         par = node.T1_B10
         if par is None: self.parNotFound(node)
         self.T1_B10 = float32(par.text)
-        
+
         par = node.T2_B10
         if par is None: self.parNotFound(node)
         self.T2_B10 = float32(par.text)
@@ -3477,37 +3477,37 @@ class L2A_Config(object):
         par = node.T_SDW
         if par is None: self.parNotFound(node)
         self.T_SDW = float32(par.text)
-        
+
         par = node.T_B02_B12
         if par is None: self.parNotFound(node)
         self.T_B02_B12 = float32(par.text)
-          
+
     ###READING FROM L2A_CAL_AC_GIPP.xml
     ### Scaling:
         xp = L2A_XmlParser(self, 'AC_GIPP')
         xp.export()
         xp.validate()
-        
+
         node = xp.getTree('Atmospheric_Correction', 'References')
         par = node.Lib_Dir
         if par is None: self.parNotFound(par)
         try:
             scriptDir = os.environ['SEN2COR_BIN']
         except:
-            scriptDir = getScriptDir() 
+            scriptDir = getScriptDir()
         self.libDir = os.path.join(scriptDir,'lib')
         if self._resolution == 10:
             libDir = os.path.join(self.libDir,'10')
         else:
             libDir = os.path.join(self.libDir,'20_60')
-        
+
         if self._resolution == 10:
             bandIndex = [1,2,3,7]
             self._ch940 = [0,0,0,0,0,0]
         else:
             bandIndex = [0,1,2,3,4,5,6,8,9,10,11,12]
-            self._ch940 = [8,8,9,9,0,0]        
-        
+            self._ch940 = [8,8,9,9,0,0]
+
         sensor = xp.getTree('Atmospheric_Correction', 'Sensor')
         wavelength = sensor.Calibration.Band_List.wavelength
         i = 0
@@ -3527,7 +3527,7 @@ class L2A_Config(object):
             if par is None: self.parNotFound(par)
             self._fwhm[i] = float32(par.text)
             i+=1
-        
+
     #####READING FROM L2A_GIPP.xml
         xp = L2A_XmlParser(self, 'GIPP')
         xp.export()
@@ -3540,53 +3540,53 @@ class L2A_Config(object):
         par = node.Log_Level
         if par is None: self.parNotFound(par)
         self._logLevel = par.text
-        
+
         par = node.Nr_Processes
         if par is None: self.parNotFound(par)
         self.nrProcs = par.text
-        
+
         # SIITBX-55: alternative output directory for PDGS:
         par = node.Target_Directory
         if par is None: self.parNotFound(par)
-        self._targetDirectory = par.text  
-        
+        self._targetDirectory = par.text
+
         par = node.DEM_Directory
         if par is None: self.parNotFound(par)
         self._demDirectory = par.text
-        
+
         par = node.DEM_Reference
         if par is None: self.parNotFound(par)
         self._demReference = par.text
-        
-    ### Scene Classification:    
+
+    ### Scene Classification:
     ### Filters:
         node = xp.getTree('Scene_Classification','Filters')
         if node is None: self.parNotFound(node)
-        
+
         par = node.Median_Filter
         if par is None: self.parNotFound(node)
-        self.medianFilter = int(par.text)        
-        
+        self.medianFilter = int(par.text)
+
     ### Atmospheric Correction:
     ### References:
         node = xp.getTree('Atmospheric_Correction', 'Look_Up_Tables')
         if node is None: self.parNotFound(node)
-        
+
         if self.aerosolType == None:
             par = node.Aerosol_Type
             if par is None: self.parNotFound(par)
             self.aerosolType = par.text
-        
+
         if self.midLatitude == None:
             par = node.Mid_Latitude
             if par is None: self.parNotFound(par)
             self.midLatitude = par.text
-        
+
         if self.ozoneContent == None:
             par = node.Ozone_Content
             if par is None: self.parNotFound(par)
             self.ozoneContent = par.text
-        
+
     ### Flags:
         node = xp.getTree('Atmospheric_Correction', 'Flags')
         if node is None: self.parNotFound(node)
@@ -3618,7 +3618,7 @@ class L2A_Config(object):
     ### Calibration:
         node = xp.getTree('Atmospheric_Correction', 'Calibration')
         if node is None: self.parNotFound(node)
-        
+
         par = node.Adj_Km
         if par is None: self.parNotFound(par)
         self.adj_km = float32(par.text)
@@ -3640,8 +3640,8 @@ class L2A_Config(object):
         if par is None: self.parNotFound(par)
         self.wv_thr_cirrus = clip(float32(par.text), 0.1, 1.0)
         return
-   
-   
+
+
     def readTileMetadata(self):
         xp = L2A_XmlParser(self, 'T2A')
         ang = xp.getTree('Geometric_Info', 'Tile_Angles')
@@ -3767,7 +3767,7 @@ class L2A_Config(object):
             i += 1
         return arr
 
-    
+
     def getIntArray(self, node):
         nrows = len(node)
         if nrows < 0:
@@ -3816,7 +3816,7 @@ class L2A_Config(object):
             nrows = a.shape[0]
             for i in range(nrows):
                 node[i] = a[i],dtype=str
-                        
+
         elif a.ndim == 2:
             nrows = a.shape[0]
             for i in range(nrows):
@@ -3831,10 +3831,10 @@ class L2A_Config(object):
         nrows = len(node)
         if nrows < 0:
             return False
-        
+
         ncols = len(node[0].text.split())
         a = zeros([nrows,ncols],dtype=str)
-        
+
         for i in range(nrows):
             a[i,:] = array(node[i].text.split(),dtype(str))
 
@@ -3879,22 +3879,22 @@ class L2A_Config(object):
         par = doc.find(parameter)
         if par is None: self.parNotFound(parameter)
         return int(par.text)
- 
- 
+
+
     def getFloat(self, label, key):
         doc = self._getDoc()
         parameter = label + '/' + key
         par = doc.find(parameter)
         if par is None: self.parNotFound(parameter)
         return float32(par.text)
- 
- 
+
+
     def getStr(self, label, key):
         doc = self._getDoc()
         parameter = label + '/' + key
         par = doc.find(parameter)
         if par is None: self.parNotFound(parameter)
-        return par.text    
+        return par.text
 
 
     def getNrTiles(self):
@@ -3903,13 +3903,13 @@ class L2A_Config(object):
         GRANULE = 'GRANULE'
         granuleDir = os.path.join(self.workDir, GRANULE)
         filelist = sorted(os.listdir(granuleDir))
-        for tile in filelist:      
+        for tile in filelist:
             if fnmatch.fnmatch(tile, filemask) == False:
                 continue
             nrTiles += 1
         return nrTiles
 
-    
+
     def createAtmDataFilename(self):
         extension = '.atm'
         height = '99000_'
@@ -3921,7 +3921,7 @@ class L2A_Config(object):
             waterVapour = 'wv00_'
         else:
             waterVapour = 'wv20_' # default
-                      
+
         par = self.aerosolType
         if par == 'RURAL':
             aerosolType = 'rura'
@@ -3931,18 +3931,18 @@ class L2A_Config(object):
             aerosolType = 'auto'
         else:
             aerosolType = 'rura' # default
-            
+
         if self.resolution == 10:
             libDir = os.path.join(self.libDir,'10')
         else:
-            libDir = os.path.join(self.libDir,'20_60')            
+            libDir = os.path.join(self.libDir,'20_60')
 
         par = self.ozoneContent
         if par == '0':
             ozoneContent = self.assignOzoneContent()
         else:
             ozoneContent = par
-        
+
         atmDataFn = ozoneContent + height + waterVapour + aerosolType + extension
         self.logger.info('generated file name for look up tables is: ' + atmDataFn)
         self.atmDataFn = os.path.join(libDir, atmDataFn)
@@ -3961,7 +3961,7 @@ class L2A_Config(object):
                        "i": abs(370 - ozoneMeasured),
                        "j": abs(410 - ozoneMeasured),
                        "k": abs(450 - ozoneMeasured)
-                       }    
+                       }
         elif self.midLatitude == 'WINTER':
             columns = {
                        "t": abs(250 - ozoneMeasured),
@@ -3969,7 +3969,7 @@ class L2A_Config(object):
                        "v": abs(330 - ozoneMeasured),
                        "w": abs(377 - ozoneMeasured),
                        "x": abs(420 - ozoneMeasured),
-                       "y": abs(460 - ozoneMeasured)                       
+                       "y": abs(460 - ozoneMeasured)
                        }
 
         ozoneContent = min(columns, key=columns.get)

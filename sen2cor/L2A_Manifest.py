@@ -8,7 +8,7 @@ import lxml.etree as ET
 class L2A_Manifest():
     def __init__(self, config):
         self.configDir = config.configDir
-        self.DICO_IDS = { 
+        self.DICO_IDS = {
         # PRODUCT ROOT -->
             "S2_Level-2A_Product_Metadata": "S2A_USER_MTD_SAFL2A_PDMC",
             "INSPIRE_Metadata": "INSPIRE.xml",
@@ -16,7 +16,7 @@ class L2A_Manifest():
             "HTML_Presentation_Stylesheet": "UserProduct_index.xsl",
         # DATASTRIP -->
             "S2_Level-2A_Datastrip([1-9]?[0-9]{1,6})_Metadata": "S2A_USER_MTD_L2A_DS_",
-        # DATASTRIP/QI_DATA -->  
+        # DATASTRIP/QI_DATA -->
             "Sensor_OLQC_Report_Datastrip([1-9]?[0-9]{1,4})_InformationData":   "S2A_OPER_MSI_L1C_DS_.*SENSOR_QUALITY",
             "Geometric_OLQC_Report_Datastrip([1-9]?[0-9]{1,4})_InformationData": "S2A_OPER_MSI_L1C_DS_.*GEOMETRIC_QUALITY",
             "General_OLQC_Report_Datastrip([1-9]?[0-9]{1,4})_InformationData": "S2A_OPER_MSI_L1C_DS_.*GENERAL_QUALITY",
@@ -38,12 +38,12 @@ class L2A_Manifest():
             "VIS_DATA_Band_20m_Tile([1-9]?[0-9]{1,6})_Data": "S2A_USER_VIS_L2A_TL_.*_20m.jp2",
             "VIS_DATA_Band_60m_Tile([1-9]?[0-9]{1,6})_Data": "S2A_USER_VIS_L2A_TL_.*_60m.jp2",
             "SCL_DATA_Band_20m_Tile([1-9]?[0-9]{1,6})_Data": "S2A_USER_SCL_L2A_TL_.*_20m.jp2",
-            "SCL_DATA_Band_60m_Tile([1-9]?[0-9]{1,6})_Data": "S2A_USER_SCL_L2A_TL_.*_60m.jp2",          
+            "SCL_DATA_Band_60m_Tile([1-9]?[0-9]{1,6})_Data": "S2A_USER_SCL_L2A_TL_.*_60m.jp2",
         # GRANULE/QI_DATA -->
-            "Sensor_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*SENSOR_QUALITY", 
+            "Sensor_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*SENSOR_QUALITY",
             "Geometric_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*GEOMETRIC_QUALITY",
             "General_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*GENERAL_QUALITY",
-            "Format_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*FORMAT_CORRECTNESS",  
+            "Format_OLQC_Report_Tile([1-9]?[0-9]{1,4})_InformationData": "S2A_USER_MSI_L2A_TL_.*FORMAT_CORRECTNESS",
             "DefectivePixelsMask_Band_([1-9]|1[0-3])_Tile([1-9]?[0-9]{1,6})_Data": "S2A_OPER_MSK_DEFECT_",
             "DetectorFootprintMask_Band_([1-9]|1[0-3])_Tile([1-9]?[0-9]{1,6})_Data": "S2A_OPER_MSK_DETFOO_",
             "NodataPixelsMask_Band_([1-9]|1[0-3])_Tile([1-9]?[0-9]{1,6})_Data": "S2A_OPER_MSK_NODATA_",
@@ -59,14 +59,14 @@ class L2A_Manifest():
             "Processing_Report_Tile([1-9]?[0-9]{1,6})_InformationData": "S2A_USER_MTD_L2A_TL_.*Report",
         # GRANULE/AUX_DATA -->
             "S2_GIP_L2A_Tile([1-9]?[0-9]{1,6})_Metadata": "S2A_USER_GIP_L2A_TL_" }
-        
-        
+
+
         self.NSMAP={'xfdu' :"urn:ccsds:schema:xfdu:1",
                 'safe':"http://www.esa.int/safe/sentinel/1.1",
                 'gml' :"http://www.opengis.net/gml"}
-    
 
-    
+
+
     def match(self, pattern, stringlist):
         """
         test a list of string against a regex pattern
@@ -77,9 +77,9 @@ class L2A_Manifest():
             #print pattern, string
             if prog.search(strin) is not None:
                 results.append(strin)
-                
+
         return results
-        
+
     def listToIds(self, dataObjectSection, s2alist):
         """
         for each id in DICO_IDS, retrieve which filepaths are matching
@@ -87,7 +87,7 @@ class L2A_Manifest():
         ids={}
         for key, pattern in self.DICO_IDS.iteritems():
             results = self.match(pattern, s2alist)
-            
+
             iTile=0
             iBand=1
             currenttile=None
@@ -102,14 +102,14 @@ class L2A_Manifest():
                 a = key.find('Band')
                 id = key
                 if a!= -1:
-                    id = id.replace(key[a:], 'Band_' + str(iBand) + '_Tile' + str(iTile) + '_Data')            
-                
+                    id = id.replace(key[a:], 'Band_' + str(iBand) + '_Tile' + str(iTile) + '_Data')
+
                 ids[result] = id
                 iBand+=1
         return ids
-    
-    
-    
+
+
+
     def getMimeType(self, href):
         """
         Returns mime type function of file extension
@@ -134,7 +134,7 @@ class L2A_Manifest():
                 return md5(open(filename, 'r').read()).hexdigest()
         else:
             return None
-    
+
     def addDataObject(self, parent, href, id, l2productpath):
         """
         add a data object element with its subelements
@@ -150,14 +150,14 @@ class L2A_Manifest():
         if os.path.exists(l2productpath_):
             byteStream.attrib["size"] = str(l2productpath_)
         else:
-            byteStream.attrib["size"] = str(None)            
-        
+            byteStream.attrib["size"] = str(None)
+
         fileLocation.attrib["locatorType"] = "URL"
         fileLocation.attrib["href"] = href
         checksum.attrib["checksumName"] = "MD5"
         checksum.text = self.getChecksum(href, l2productpath_)
 
-    
+
     def addContentUnit(self, parent, ID=None, unitType=None, textInfo=None, pdiID=None, dmdID=None, dataObjectID=None):
         """
         Add content unit element to given parent element
@@ -175,7 +175,7 @@ class L2A_Manifest():
             dataObjectPointer = ET.SubElement(contentUnit, "dataObjectPointer")
             dataObjectPointer.attrib['dataObjectID'] = dataObjectID
         return contentUnit
-    
+
     def addMetadataObject(self, parent, ID=None, classification=None, category=None, dataObjectID=None):
         """
         Add metadata object element to given parent element
@@ -191,7 +191,7 @@ class L2A_Manifest():
             dataObjectPointer = ET.SubElement(metadataObject, "dataObjectPointer")
             dataObjectPointer.attrib['dataObjectID'] = dataObjectID
         return metadataObject
-    
+
     def splitPath(self, filepath):
         """
         Returns datastrip, granule and sub directory names
@@ -211,7 +211,7 @@ class L2A_Manifest():
             if len(splitted) > 2:
                 subdir = splitted[2]
         return (tilename, stripname, subdir)
-    
+
     def updateProcessingelement(self, metadataObject):
         """
         Update processing element from L1C values to L2A
@@ -219,8 +219,8 @@ class L2A_Manifest():
         processingelement = metadataObject.find("metadataWrap").find("xmlData").find("{"+self.NSMAP["safe"]+"}processing")
         processingelement.attrib["name"] = processingelement.attrib["name"].replace("1C","2A")
         processingelement.attrib["start"] = dt.datetime.utcnow().isoformat()+"Z"
-    
-    
+
+
     def append(self, parent, child):
         """
         append a child by recopy
@@ -230,33 +230,33 @@ class L2A_Manifest():
             child.text.strip()
             newchild.text = child.text
         except:
-            pass 
+            pass
         for key in child.attrib:
             newchild.attrib[key] = child.attrib[key]
         for childOfChild in child.getchildren():
             self.append(newchild, childOfChild)
         return newchild
-    
+
     def generate(self, l2productpath, safeL1cFn):
         """
         generates the L2A safe manifest
-        by parsing the LA product 
+        by parsing the LA product
         and copying some info from the L1C safe manifest
         """
-    
+
         # == INITIALIZE XML == #
         # namespaces and root tree
         for key in self.NSMAP.keys():
             ET.register_namespace(key, self.NSMAP[key]) #Registers a namespace prefix. The registry is global, and any existing mapping for either the given prefix or the namespace URI will be removed. prefix is a namespace prefix. uri is a namespace uri. Tags and attributes in this namespace will be serialized with the given prefix, if at all possible.
         root = ET.Element('{'+self.NSMAP['xfdu']+'}'+'XFDU', nsmap=self.NSMAP) #Element class. This class defines the Element interface, and provides a reference implementation of this interface.
         root.attrib['version']="esa/safe/sentinel/1.1/sentinel-2/msi/archive_l2a_user_product"
-    
+
         # Create the 3 main sections
         informationPackageMap = ET.SubElement(root, "informationPackageMap")
         metadataSection = ET.SubElement(root, "metadataSection")
         dataObjectSection = ET.SubElement(root, "dataObjectSection")
-        
-    
+
+
         # ======== DATA OBJECT SECTION ===========
         s2alist = []
         # 1) parse product for all files
@@ -265,22 +265,22 @@ class L2A_Manifest():
             for filename in filenames:
                 s2alist.append(os.path.join(reldir, filename))
         s2alist.sort() # s2list is a list with all the files (with relative paths)
-        
-        # 2) parse list of files and guess a data object id 
+
+        # 2) parse list of files and guess a data object id
         ids = self.listToIds(dataObjectSection, s2alist)
-        
+
         # 3) creates the data objects element
         for filepath in s2alist:
             if filepath in ids:
                 self.addDataObject(dataObjectSection, filepath, ids[filepath], l2productpath)
-        
+
         # ======== INFORMATION PACKAGE MAP SECTION ===========
-        
+
         # 1) Product root (generic) + tiles + strips main elements
         productroot = self.addContentUnit(informationPackageMap, unitType="Product_Level-2A", textInfo="SENTINEL-2 MSI Level-2A User Product", pdiID="processing", dmdID="acquisitionPeriod platform")
         tileselement = self.addContentUnit(productroot, ID="Tiles", textInfo="Tiles Container")
         stripselement = self.addContentUnit(productroot, ID="Datastrips", textInfo="Datastrips Container")
-    
+
         # 2) Create elements for each granule, each datastrip, including their sub folders (IMG_DATA, QI_DATA...)
         tilemap={}
         stripmap={}
@@ -303,7 +303,7 @@ class L2A_Manifest():
                         stripid = len(stripmap.keys())+1
                         stripmap[stripname] = self.addContentUnit(stripselement, ID="Datastrip%d"%(stripid), textInfo="Granule Container")
                         self.addContentUnit(stripmap[stripname], ID="QI_DATA_Datastrip%d"%(stripid), textInfo="Quality Control Container")
-    
+
         # 3) Then create a element for each element below the correct parent
         for filepath in s2alist:
             if filepath in ids:
@@ -330,11 +330,11 @@ class L2A_Manifest():
                             self.addContentUnit(stripmap[stripname].getchildren()[0], ID=id+"_Unit", unitType="Metadata Unit", dataObjectID=id)
                 else:
                     self.addContentUnit(productroot, ID=id+"_Unit", unitType="Metadata Unit", dataObjectID=id)
-        
-        
+
+
         # ======== METADATA OBJECT SECTION ===========
-        
-        # 1) Recopy 1st part from L1C manifest 
+
+        # 1) Recopy 1st part from L1C manifest
             ### root ###
         treeL1C = ET.parse(safeL1cFn)
         manifestL1C = treeL1C.getroot()
@@ -346,21 +346,21 @@ class L2A_Manifest():
                 #metadataSection.append(childL1C)
                 childL2A = self.append(metadataSection, childL1C)
                 if childL2A.attrib["ID"] == "processing":
-                    self.updateProcessingelement(childL2A) 
-        
+                    self.updateProcessingelement(childL2A)
+
         # 2) Add metadata elements (only) in 2d part
         for filepath in s2alist:
             if filepath in ids:
                 id = ids[filepath]
                 if "Metadata" in id:
                     self.addMetadataObject(metadataSection, ID=id+"_Information", classification="DESCRIPTION", category="DMD", dataObjectID=id)
-        
+
         # == WRITE XML == #
         #print ET.tostring(root, pretty_print=True)
         fn = os.path.join(l2productpath, 'L2A_Manifest.xml')
         with open(fn,"w") as o:
             o.write(ET.tostring(root, encoding='UTF-8', pretty_print=True, xml_declaration=True))
         #os.system("xmllint -format toto.tmp > out.xml")
-    
 
-    
+
+

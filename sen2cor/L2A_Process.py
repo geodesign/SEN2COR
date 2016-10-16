@@ -22,9 +22,9 @@ formatter = logging.Formatter('<check>\n<inspection execution=\"%(asctime)s\" le
 
 
 def updateTiles(config):
-    dirname, basename = os.path.split(config.workDir)    
+    dirname, basename = os.path.split(config.workDir)
     L2A_UP_ID = basename[:4] + 'USER' + basename[8:]
-    L2A_UP_ID = L2A_UP_ID.replace('1C_', '2A_')    
+    L2A_UP_ID = L2A_UP_ID.replace('1C_', '2A_')
     targetDir = config.targetDirectory
     if targetDir != 'DEFAULT':
         dirname = targetDir
@@ -36,7 +36,7 @@ def updateTiles(config):
     filemask = 'S2A_OPER_*'
     picFn = 'configPic.p'
     L2A_TILES = []
-    for tile in L1C_TILES:      
+    for tile in L1C_TILES:
         if fnmatch.fnmatch(tile, filemask) == False:
             continue
         L2A_TILE_ID = config.create_L2A_Tile(tile)
@@ -62,16 +62,16 @@ def updateTiles(config):
             try:
                 f = open(picFnTile, 'rb')
                 config = pickle.load(f)
-                f.close()             
-                config.tStart = tStart   
+                f.close()
+                config.tStart = tStart
                 config.tEstimation = tEstimation
-                f = open(picFnTile, 'wb')                
+                f = open(picFnTile, 'wb')
                 pickle.dump(config, f, 2)
                 f.close()
             except:
                 config.logger = logger
                 logger.fatal('cannot update the config object %s with new time estimation' % f)
-    
+
     return L2A_TILES
 
 
@@ -79,9 +79,9 @@ def postprocess(config):
     HTML = 'HTML'
     SEN2COR = 'SEN2COR'
     REPORT_XML = '_report.xml'
-    
+
     basename = os.path.basename(config.L2A_UP_DIR)
-    fileID = basename 
+    fileID = basename
     fnOut =  os.path.join(config.L2A_UP_DIR, HTML, SEN2COR + REPORT_XML)
     filelist = sorted(os.listdir(config.logDir))
     for filename in filelist:
@@ -97,18 +97,18 @@ def postprocess(config):
         except:
             config.logger.error('cannot copy report file: %s' % fnIn)
             return False
-        
+
     config.logger.error('report file not present: %s' % fnOut)
     return False
 
 
 def main(args=None):
     import argparse
-        
+
     config = L2A_Config(None)
     descr = config.processorName +'. Version: '+ config.processorVersion + ', created: '+ config.processorDate + \
     ', supporting Level-1C product version: ' + config.productVersion + '.'
-     
+
     parser = argparse.ArgumentParser(description=descr)
     parser.add_argument('directory', help='Directory where the Level-1C input files are located')
     parser.add_argument('--resolution', type=int, choices=[10, 20, 60], help='Target resolution, can be 10, 20 or 60m. If omitted, all resolutions will be processed')
@@ -120,17 +120,17 @@ def main(args=None):
     parser.add_argument('--GIP_L2A_SC', help='Select the scene classification GIPP')
     parser.add_argument('--GIP_L2A_AC', help='Select the atmospheric correction GIPP')
     args = parser.parse_args()
-    
+
     # SIITBX-49: directory should not end with '/':
     directory = args.directory
     if directory[-1] == '/' or directory[-1] == '\\':
         directory = directory[:-1]
 
-    # check if directory argument starts with a relative path. If not, expand: 
+    # check if directory argument starts with a relative path. If not, expand:
     if(os.path.isabs(directory)) == False:
         cwd = os.getcwd()
         directory = os.path.join(cwd, directory)
-        
+
     directory = os.path.normpath(directory)
     if os.path.exists(directory) == False:
         stderrWrite('directory "%s" does not exist\n.' % directory)
@@ -143,7 +143,7 @@ def main(args=None):
     if 'GRANULE' in directory:
         dirname, selectedTile = os.path.split(directory)
         directory = os.path.dirname(dirname)
-    
+
     test = os.path.basename(directory)
     S2A_L1C_mask = 'S2A_????_???_???L1C*'
     if(fnmatch.fnmatch(test, S2A_L1C_mask) == False):
@@ -155,11 +155,11 @@ def main(args=None):
     HelloWorld = config.processorName +', '+ config.processorVersion +', created: '+ config.processorDate
     stdoutWrite('\n%s started ...\n' % HelloWorld)
 
-#     if(args.profile == True):    
+#     if(args.profile == True):
 #         import cProfile, pstats, StringIO
 #         pr = cProfile.Profile()
 #         pr.enable()
-        
+
     if args.resolution == None:
         resolution = 0
     else:
@@ -169,28 +169,28 @@ def main(args=None):
     dirname, basename = os.path.split(directory)
     L2A_UP_ID = basename[:4] + 'USER' + basename[8:]
     L2A_UP_ID = L2A_UP_ID.replace('1C_', '2A_')
-    
+
     logName = L2A_UP_ID + '_report.xml'
     logDir = config.logDir
     logLevel = config.logLevel
     fnLog = os.path.join(logDir, logName)
     if not os.path.exists(logDir):
         os.mkdir(logDir)
-        
+
     try:
         f = open(config.processingStatusFn, 'w')
         f.write('0.0\n')
-        f.close()  
+        f.close()
     except:
-        stderrWrite('cannot create process status file: %s\n' % config.processingStatusFn)        
+        stderrWrite('cannot create process status file: %s\n' % config.processingStatusFn)
         return FAILURE
     try:
         f = open(fnLog, 'w')
         f.write('<?xml version="1.0" encoding="UTF-8"?>\n')
         f.write('<Sen2Cor_Level-2A_Report_File>\n')
         f.close()
-    except:    
-        stderrWrite('cannot update the report file: %s\n' % fnLog)        
+    except:
+        stderrWrite('cannot update the report file: %s\n' % fnLog)
         return FAILURE
 
     # Just a normal logger
@@ -201,11 +201,11 @@ def main(args=None):
     logger.level = getLevel(logLevel)
     logger.info('logging for the main process initialized')
     config.logger = logger
-    
+
     CFG = 'cfg'
     if args.GIP_L2A != None:
         config._configFn =  os.path.join(config.home, CFG, args.GIP_L2A)
-     
+
     if args.GIP_L2A_SC != None:
         config.configSC =  os.path.join(config.home, CFG, args.GIP_L2A_SC)
 
@@ -228,9 +228,9 @@ def main(args=None):
     L2A_TILES = updateTiles(config)
     if L2A_TILES == False:
         return FAILURE
-    
+
     result = SUCCESS
-    
+
     if config.crOnly == False:
         scheduler = L2A_Schedule(config, L2A_TILES)
         result = scheduler.sync()
@@ -242,20 +242,20 @@ def main(args=None):
         except:
             logger.error('parsing error for user product')
             result = FAILURE
-    
-#     if(args.profile == True):    
+
+#     if(args.profile == True):
 #         pr.disable()
 #         s = StringIO.StringIO()
 #         sortby = 'cumulative'
 #         ps = pstats.Stats(pr, stream=s).sort_stats(sortby).print_stats(.25, 'L2A_')
 #         ps.print_stats()
-#         profile = s.getvalue()            
+#         profile = s.getvalue()
 #         s.close()
 #         with open(os.path.join(getScriptDir(), 'log', 'profile'), 'w') as textFile:
 #             textFile.write(profile)
-#             textFile.close()   
+#             textFile.close()
     else:
-        config.logger = logger        
+        config.logger = logger
     #Create the manifest.safe (L2A)
     mn = L2A_Manifest(config)
     mn.generate(config.L2A_UP_DIR, config.L2A_MANIFEST_SAFE)
@@ -265,17 +265,17 @@ def main(args=None):
     except:
         logger.error('parsing error for manifest')
         result = FAILURE
-    
+
     if postprocess(config) == False:
         result = FAILURE
-        
+
     if result == FAILURE:
         stdoutWrite('Progress[%]: 100.00 : Application terminated with at least one error.\n')
     else:
         stdoutWrite('Progress[%]: 100.00 : Application terminated successfully.\n')
-    
+
     return result
-    
+
 
 if __name__ == "__main__":
     if platform.system() == 'Windows':

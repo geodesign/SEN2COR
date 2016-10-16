@@ -34,8 +34,8 @@ except ImportError:
     import gdal,osr
     from gdalconst import *
 
-    
-# SIITBX-47: to suppress user warning due to the fact that 
+
+# SIITBX-47: to suppress user warning due to the fact that
 # http://trac.osgeo.org/gdal/ticket/5480 is not implemented
 # in the current openJPEG driver for windows used by ANACONDA:
 gdal.PushErrorHandler('CPLQuietErrorHandler')
@@ -62,7 +62,7 @@ class L2A_Tables(object):
         IMG_DATA = 'IMG_DATA'
         QI_DATA = 'QI_DATA'
         GRANULE = 'GRANULE'
-        
+
         self.aux_src = None
 
         if self._logger.level == logging.DEBUG:
@@ -108,7 +108,7 @@ class L2A_Tables(object):
             L1C_TILE_ID_ = L1C_TILE_ID
             L2A_TILE_ID_ = L2A_TILE_ID
             configFn = config.configFn
-        
+
         qiData = os.path.join(L2A_TILE_ID_, QI_DATA)
         if(os.path.exists(qiData) == False):
             copytree(os.path.join(L1C_TILE_ID_, QI_DATA),  os.path.join(L2A_TILE_ID_, QI_DATA))
@@ -127,7 +127,7 @@ class L2A_Tables(object):
             L2A_TILE_MTD_XML = L2A_TILE_MTD_XML.replace('L1C_', 'L2A_')
             L2A_TILE_MTD_XML = os.path.join(L2A_TILE_ID_, L2A_TILE_MTD_XML)
             self.config.L1C_TILE_MTD_XML = L1C_TILE_MTD_XML
-            self.config.L2A_TILE_MTD_XML = L2A_TILE_MTD_XML        
+            self.config.L2A_TILE_MTD_XML = L2A_TILE_MTD_XML
 
             xp = L2A_XmlParser(self.config, 'T1C')
             copyfile(L1C_TILE_MTD_XML, L2A_TILE_MTD_XML)
@@ -150,7 +150,7 @@ class L2A_Tables(object):
                 self.logger.fatal('no Tile_List in datastrip metadata found')
 
         L1C_ImgDataDir = os.path.join(L1C_TILE_ID_, IMG_DATA)
-        self._L2A_ImgDataDir = os.path.join(L2A_TILE_ID_, IMG_DATA)        
+        self._L2A_ImgDataDir = os.path.join(L2A_TILE_ID_, IMG_DATA)
 
         self._L1C_bandDir = L1C_ImgDataDir
         self._L2A_bandDir = os.path.join(self._L2A_ImgDataDir, BANDS)
@@ -169,26 +169,26 @@ class L2A_Tables(object):
             for filenameAux in filelist:
                 if fnmatch.fnmatch(filenameAux, filemask) == True:
                     self.aux_src=filenameAux
-                    break       
+                    break
             # copy configuration to AUX dir:
             basename = os.path.basename(config._L2A_TILE_MTD_XML)
             fnAux = basename.replace('_MTD_', '_GIP_')
             target = os.path.join(self._L2A_AuxDataDir,fnAux)
-            if(os.path.exists(target) == False):   
+            if(os.path.exists(target) == False):
                 try:
                     copyfile(configFn, target)
                 except:
                     self.logger.error('cannot copy configuration to %s' % target)
-                    
+
         filelist = sorted(os.listdir(self._L2A_AuxDataDir))
         filemask = 'S2A_*'
         for filenameAux in filelist:
             if fnmatch.fnmatch(filenameAux, filemask) == True:
                 self.aux_src=filenameAux
-                break   
+                break
 
         if(os.path.exists(self._L2A_QualityDataDir) == False):
-            os.makedirs(self._L2A_QualityDataDir)  
+            os.makedirs(self._L2A_QualityDataDir)
         #
         # the File structure:
         #-------------------------------------------------------
@@ -474,8 +474,8 @@ class L2A_Tables(object):
 
     def get_prv(self):
         return self._PRV
-    
-   
+
+
     def get_pwc(self):
         return self._PWC
 
@@ -574,8 +574,8 @@ class L2A_Tables(object):
 
     def set_prv(self, value):
         self._PRV = value
-        
-        
+
+
     def set_pwc(self, value):
         self._PWC = value
 
@@ -674,8 +674,8 @@ class L2A_Tables(object):
 
     def del_prv(self):
         del self._PRV
-        
-        
+
+
     def del_pwc(self):
         del self._PWC
 
@@ -880,9 +880,9 @@ class L2A_Tables(object):
             return False
         except:
             return False
-        
-    
-    def checkBandCount(self):    
+
+
+    def checkBandCount(self):
         sourceDir = self._L1C_bandDir
         dirs = sorted(os.listdir(sourceDir))
         bandIndex = self.bandIndex
@@ -935,7 +935,7 @@ class L2A_Tables(object):
             channels = [17,18,19]
             sourceDir = self._L2A_bandDir.replace('R10m', 'R20m')
             upsampling = True
-        
+
         if upsampling == True:
             dirs = sorted(os.listdir(sourceDir))
             for i in channels:
@@ -955,7 +955,7 @@ class L2A_Tables(object):
             bandName = 'SCL'
             channel = 14
             filemask = '*_' + bandName + '_L2A_*' + srcResolution + '.jp2'
-            for filename in dirs:                        
+            for filename in dirs:
                 if fnmatch.fnmatch(filename, filemask) == False:
                     continue
                 res = self.importBand(channel, os.path.join(sourceDir, filename))
@@ -963,12 +963,12 @@ class L2A_Tables(object):
                     return False
                 break
 
-        self.dem = False        
+        self.dem = False
         demDir =  self.config.demDirectory
         if demDir == 'NONE':
             self.logger.info('DEM directory not specified, flat surface is used')
             return True
-        
+
         demDir = os.path.join(self.config.home, self.config.demDirectory)
         # check if DEM is a DTED type, these files must exist in the given directory:
         DTED = False
@@ -979,14 +979,14 @@ class L2A_Tables(object):
                 if fnmatch.fnmatch(filename, filemask) == True:
                     DTED = True
                     break
-            
+
         # yes it is, run dem preparation for DTED:
         if DTED == True:
             if(self.gdalDEM_dted() == False):
                 self.config.demDirectory = 'NONE'
                 # continue with flat surface ...
                 return True
-                      
+
         else: # run DEM preparation for SRTM:
             if(self.gdalDEM_srtm() == False):
                 self.config.demDirectory = 'NONE'
@@ -997,11 +997,11 @@ class L2A_Tables(object):
         if(self.gdalDEM_Shade() == False):
             self.logger.fatal('shell execution error generating DEM shadow')
             return False
-        
+
         if(self.gdalDEM_Slope() == False):
             self.logger.fatal('shell execution error generating DEM slope')
             return False
-        
+
         if(self.gdalDEM_Aspect() == False):
             self.logger.fatal('shell execution error generating DEM aspect')
             return False
@@ -1010,7 +1010,7 @@ class L2A_Tables(object):
             os.remove(self._TmpDemFile)
         except:
             pass
-        
+
         self.config.timestamp('L2A_Tables: stop import')
 
         return True
@@ -1018,13 +1018,13 @@ class L2A_Tables(object):
 
     def setCornerCoordinates(self):
         # get the target resolution and metadata for the resampled bands below:
-        xp = L2A_XmlParser(self.config, 'T2A')           
+        xp = L2A_XmlParser(self.config, 'T2A')
         tg = xp.getTree('Geometric_Info', 'Tile_Geocoding')
         nrows = self.config.nrows
         ncols = self.config.ncols
         idx = self.getResolutionIndex()
         ulx = tg.Geoposition[idx].ULX
-        uly = tg.Geoposition[idx].ULY        
+        uly = tg.Geoposition[idx].ULY
         res = float32(self.config.resolution)
         geoTransformation = [ulx,res,0.0,uly,0.0,-res]
         extent = self.GetExtent(geoTransformation, ncols, nrows)
@@ -1074,23 +1074,23 @@ class L2A_Tables(object):
         PWC (Precipitable Water Content), Grib Unit [kg/m^2]
         MSL (Mean Sea Level pressure),    Grib Unit [Pa]
         OZO (Ozone),                      Grib Unit [kg/m^2]
-        
+
         calculation for Ozone according to R. Richter (20/1/2016):
         ----------------------------------------------------------
         GRIB_UNIT = [kg/m^2]
         standard ozone column is 300 DU (Dobson Units),
         equals to an air column of 3 mm at STP (standard temperature (0 degree C) and pressure of 1013 mbar).
-        
+
         Thus, molecular weight of O3 (M = 48): 2.24 g (equals to 22.4 liter at STP)
-        
+
         300 DU = 3 mm  (equals to (0.3*48 / 2.24) [g/m^2])
-         = 6.428 [g/m^2] = 6.428 E-3 [kg/m^2]        
+         = 6.428 [g/m^2] = 6.428 E-3 [kg/m^2]
 
         Example:
-        
+
         ozone (GRIB) = 0.005738 (equals to DU = 300 * 0.005738/6.428 E-3)
         ozone (DU)   = 267.4 DU
-        
+
         Thus, ozone GRIB will be weighted with factor 155.5694 (equals to 1/6.428 E-3)
         in order to receive ozone in DU
         '''
@@ -1098,11 +1098,11 @@ class L2A_Tables(object):
         if bandIndex in auxBands == False:
             self.logger.error('wrong band index for aux data')
             return False
-        
+
         bandIndex -= 29 # bandIndex starts at 30
         ozoneFactor = 155.5694 # 1/6.428 E-3
         standardOzoneColumn = 300.0
-        
+
         straux_src = os.path.join(self._L2A_AuxDataDir, self.aux_src)
         curdir = os.path.curdir
         head, tail = os.path.split(straux_src)
@@ -1124,7 +1124,7 @@ class L2A_Tables(object):
                 l.release()
                 return arr
 
-    
+
     def gdalDEM_dted(self):
         demDir = self.config.demDirectory
         if demDir == 'NONE':
@@ -1143,47 +1143,47 @@ class L2A_Tables(object):
         zone2 = zone[-1:].upper()
         lonMin, latMin, dummy = self.transform_utm_to_wgs84(xy[1,0], xy[1,1], zone1, zone2)
         lonMax, latMax, dummy = self.transform_utm_to_wgs84(xy[3,0], xy[3,1], zone1, zone2)
-        
+
         lat_cen = int((latMax+latMin)/2)
         lon_cen = int((lonMax+lonMin)/2)
         lonMin = int(lonMin)
         lonMax = int(lonMax)
         latMin = int(latMin)
         latMax = int(latMax)
-        
+
         if lon_cen<0:
             lonMask='w'
             lon_cen=-lon_cen
         else:
             lonMask='e'
-            
+
         if lat_cen<0:
             latMask='s'
             lat_cen=-lat_cen
         else:
             latMask='n'
-            
+
         if lon_cen < 100:
             if lon_cen < 10:
                 lonMask = lonMask + '00'
             else:
                 lonMask = lonMask + '0'
-        
+
         srtmf_src = ''
-        
+
         filelist = sorted(os.listdir(sourceDir))
         found = False
         for i in range(lonMin-1,lonMax+1):
             for j in range(latMin-1,latMax+1):
                 file_mask = lonMask + str(i) + '_' + latMask + str(j) + '.dt1'
-                    
+
                 for filename in filelist:
                     if(fnmatch.fnmatch(filename, file_mask) == True):
                         found = True
-                        srtmf_src += ' ' + os.path.join(sourceDir, filename)  
-                        break                      
-                            
-        if found == False:  
+                        srtmf_src += ' ' + os.path.join(sourceDir, filename)
+                        break
+
+        if found == False:
             self.logger.info('DEM not found, flat surface is used')
             return False
 
@@ -1214,33 +1214,33 @@ class L2A_Tables(object):
             return False
         finally:
             l.release()
-            
+
         while True:
             if(os.path.isfile(tmpFile) == True):
                 break
             else:
                 sleep(1)
-                continue            
+                continue
 
         copyfile(tmpFile, self._TmpFile)
         self.importBand(self.DEM)
         os.rename(self._TmpFile, self._TmpDemFile)
         os.remove(tmpFile)
-        self.logger.info('DEM received and prepared')     
+        self.logger.info('DEM received and prepared')
         return True
-    
-    
+
+
     def gdalDEM_srtm(self):
         import urllib, urllib2
         import zipfile
         import multiprocessing
         p = multiprocessing.current_process()
- 
+
         demDir = self.config.demDirectory
         if demDir == 'NONE':
             self.logger.info('DEM directory not specified, flat surface is used')
             return False
- 
+
         self.logger.info('Start DEM alignment for tile')
         sourceDir = os.path.join(self.config.home, demDir)
         l.acquire()
@@ -1249,7 +1249,7 @@ class L2A_Tables(object):
                 os.makedirs(sourceDir)
         finally:
             l.release()
- 
+
         xy = self.cornerCoordinates
         xp = L2A_XmlParser(self.config, 'T2A')
         tg = xp.getTree('Geometric_Info', 'Tile_Geocoding')
@@ -1270,22 +1270,22 @@ class L2A_Tables(object):
             return False
 
         for i in range(lonMinId, lonMaxId+1):
-            for j in range(latMinId, latMaxId+1):        
+            for j in range(latMinId, latMaxId+1):
                 tifFn = 'srtm_{:0>2d}_{:0>2d}.tif'.format(i,j)
                 zipFn = 'srtm_{:0>2d}_{:0>2d}.zip'.format(i,j)
                 tmpDir = 'srtm_{:0>2d}_{:0>2d}_tmp'.format(i,j)
                 tifFn_path = os.path.join(sourceDir,tifFn)
                 zipFn_path = os.path.join(sourceDir,zipFn)
                 tmpDir = os.path.join(sourceDir,tmpDir)
-                     
-                while True:           
+
+                while True:
                     try:
                         # does the tiff file already exist?
                         with open (tifFn_path) as fp:
-                            if self.logger.level == logging.DEBUG: 
+                            if self.logger.level == logging.DEBUG:
                                 print p.pid, 'DEM exist: %s', tifFn_path
                             break
-                        
+
                     except IOError:
                         # block the zip download for the other processes:
                         if not os.path.isdir(tmpDir):
@@ -1293,7 +1293,7 @@ class L2A_Tables(object):
                             tifFn_src = os.path.join(tmpDir, tifFn)
                             try:
                                 # zipfile needs to be downloaded ...
-                                if self.logger.level == logging.DEBUG: 
+                                if self.logger.level == logging.DEBUG:
                                     print p.pid, 'read zipfile ...'
                                 prefix = self.config._demReference
                                 stdoutWrite('Trying to retrieve DEM from URL %s this may take some time ...\n' % prefix)
@@ -1304,7 +1304,7 @@ class L2A_Tables(object):
                                 localFile.write(webFile.read())
                                 webFile.close()
                                 localFile.close()
-                                if self.logger.level == logging.DEBUG: 
+                                if self.logger.level == logging.DEBUG:
                                     print p.pid, 'zip downloaded.'
                             except urllib2.URLError as e:
                                 stderrWrite('Download error %s, flat surface will be used.\n' % e.reason)
@@ -1317,18 +1317,18 @@ class L2A_Tables(object):
                                 zipf.close()
                                 os.rename(tifFn_src, tifFn_path)
                                 self.logger.info('DEM unpacked and moved: %s', tifFn_path)
-                                if self.logger.level == logging.DEBUG: 
+                                if self.logger.level == logging.DEBUG:
                                     print p.pid, 'DEM unpacked and moved: %s', tifFn_path
                                 shutil.rmtree(tmpDir)
-                                os.remove(zipFn_path)                    
-                                if self.logger.level == logging.DEBUG: 
+                                os.remove(zipFn_path)
+                                if self.logger.level == logging.DEBUG:
                                     print p.pid, 'zipfile removed: %s', zipf
                                 break
                         else:
-                            if self.logger.level == logging.DEBUG: 
+                            if self.logger.level == logging.DEBUG:
                                 print p.pid, 'wait for termination of download ...'
                             sleep(1)
- 
+
         command = 'gdalwarp '
         arguments = '-ot Int16 '
 
@@ -1340,7 +1340,7 @@ class L2A_Tables(object):
                 for j in range(latMinId, latMaxId+1):
                     tifFn = os.path.join(sourceDir,'srtm_{:0>2d}_{:0>2d}.tif'.format(i,j))
                     arguments += tifFn + ' '
- 
+
             srtmf_src = os.path.join(sourceDir, 'srtm_' + self.config.L2A_TILE_ID + '_src.tif')
             if(os.path.isfile(srtmf_src) == True):
                 os.remove(srtmf_src)
@@ -1363,10 +1363,10 @@ class L2A_Tables(object):
                 if self.logger.level == logging.DEBUG:
                     print(p.pid, 'waiting for DEM extraction ...')
                 sleep(1)
-                                
+
         hcsCode = tg.HORIZONTAL_CS_CODE.text
         t_srs = '-t_srs ' + hcsCode
- 
+
         te = ' -te %f %f %f %f' % (xy[0,0], xy[2,1], xy[2,0], xy[0,1])
         tr = ' -tr %d %d' % (self.config.resolution, self.config.resolution)
         t_warp = te + tr + ' -r cubicspline '
@@ -1400,13 +1400,13 @@ class L2A_Tables(object):
             os.remove(self._TmpDemFile)
         if((os.path.isfile(srtmf_src) == True) and ('_src.tif' in srtmf_src)):
             os.remove(srtmf_src)
-            
+
         os.rename(self._TmpFile, self._TmpDemFile)
-        
+
         if(os.path.isfile(tmpFile) == True):
             os.remove(tmpFile)
-        
-        self.logger.info('DEM received and prepared')      
+
+        self.logger.info('DEM received and prepared')
         return True
 
 
@@ -1414,24 +1414,24 @@ class L2A_Tables(object):
         head, tmpFile = os.path.split(self._TmpFile)
         head, tmpDemFile = os.path.split(self._TmpDemFile)
         curdir = os.path.curdir
-        
+
         altitude = 90.0 - float32(mean(self.config.solze_arr))
         azimuth = float32(mean(self.config.solaz_arr))
         command = 'gdaldem hillshade '
         options = '-compute_edges -az ' + str(azimuth) + ' -alt ' + str(altitude)
         callstr = command + options + ' ' + tmpDemFile + ' ' + tmpFile + self._DEV0
 
-        l.acquire()        
+        l.acquire()
         try:
             os.chdir(head)
-            subprocess.call(callstr, shell=self._SHELL)  
+            subprocess.call(callstr, shell=self._SHELL)
             os.chdir(curdir)
         except:
             self.logger.fatal('shell execution error using gdaldem shade')
             return False
         finally:
             l.release()
-        
+
         self.importBand(self.SDW)
         return True
 
@@ -1440,7 +1440,7 @@ class L2A_Tables(object):
         head, tmpFile = os.path.split(self._TmpFile)
         head, tmpDemFile = os.path.split(self._TmpDemFile)
         curdir = os.path.curdir
-                
+
         command = 'gdaldem slope '
         options = '-compute_edges'
         callstr = command + options + ' ' + tmpDemFile + ' ' + tmpFile + self._DEV0
@@ -1456,7 +1456,7 @@ class L2A_Tables(object):
         finally:
             l.release()
 
-        self.importBand(self.SLP)    
+        self.importBand(self.SLP)
         return True
 
 
@@ -1467,12 +1467,12 @@ class L2A_Tables(object):
 
         command = 'gdaldem aspect '
         options = '-compute_edges'
-        callstr = command + options + ' ' + tmpDemFile + ' ' + tmpFile + self._DEV0 
+        callstr = command + options + ' ' + tmpDemFile + ' ' + tmpFile + self._DEV0
 
         l.acquire()
         try:
             os.chdir(head)
-            subprocess.call(callstr, shell=self._SHELL)   
+            subprocess.call(callstr, shell=self._SHELL)
             os.chdir(curdir)
         except:
             self.logger.fatal('shell execution error using gdaldem aspect')
@@ -1486,7 +1486,7 @@ class L2A_Tables(object):
 
     def importBand(self, index, filename=None):
         bandName = self.getBandNameFromIndex(index)
-        
+
         if filename == None: # input via GDAL (GeoTiff data, DEM):
             tmpFile = self._TmpFile
             curdir = os.path.curdir
@@ -1502,19 +1502,19 @@ class L2A_Tables(object):
                     continue
 
             os.chdir(curdir)
-            l.release()           
+            l.release()
             tgt_nrows = indataArr.RasterYSize
             tgt_ncols = indataArr.RasterXSize
         else: # the new input for JP2 data:
             warnings.filterwarnings("ignore")
             kwargs = {"tilesize": (2048, 2048), "prog": "RPCL"}
-            indataset = glymur.Jp2k(filename, **kwargs)  
+            indataset = glymur.Jp2k(filename, **kwargs)
             # now the resamling:
             src_nrows = indataset.shape[0]
             src_ncols = indataset.shape[1]
             tgt_nrows = self.config.nrows
             tgt_ncols = self.config.ncols
-            fullRes = indataset[:]            
+            fullRes = indataset[:]
             if src_nrows == tgt_nrows:
             # no resamling required:
                 indataArr = fullRes
@@ -1534,11 +1534,11 @@ class L2A_Tables(object):
                 # order 3 is for cubic spline:
                 indataArr = (skit_resize(fullRes.astype(uint16),([sizeUp,sizeUp]),order=3)*65535.).round().astype(uint16)
             indataset = None
-                
+
         if (index < 10) and (indataArr.max() == 0):
             self.logger.fatal('Band ' + bandName + ' does not contain any data')
             return False
-            
+
         h5file = openFile(self._ImageDataBase, mode='a', title =  str(self._resolution) + 'm bands')
         if(h5file.__contains__('/tmp') == False):
             h5file.createGroup('/', 'tmp', 'temporary data')
@@ -1630,7 +1630,7 @@ class L2A_Tables(object):
             filename = self._L2A_Tile_BND_File
             filename = filename.replace('BXX', bandName)
             if (bandName == 'VIS'):
-                filename = self._L2A_Tile_VIS_File                
+                filename = self._L2A_Tile_VIS_File
             elif (bandName == 'SNW') :
                 filename = self._L2A_Tile_SNW_File
             elif(bandName == 'CLD'):
@@ -1663,7 +1663,7 @@ class L2A_Tables(object):
                     Granules.append(imageId)
             except:
                 continue
-        
+
         h5file.close()
         # update on UP level:
         xp = L2A_XmlParser(self.config, 'UP2A')
@@ -1688,24 +1688,24 @@ class L2A_Tables(object):
             pic = xp.getTree('General_Info', 'L2A_Product_Image_Characteristics')
             si = pic.Spectral_Information_List.Spectral_Information
             if self._resolution == 60:
-                for i in range(len(si)):        
+                for i in range(len(si)):
                     si[i].RESOLUTION = 60
             elif self._resolution == 20:
-                for i in [1,2,3,4,5,6,8,11,12]:        
-                    si[i].RESOLUTION = 20           
+                for i in [1,2,3,4,5,6,8,11,12]:
+                    si[i].RESOLUTION = 20
             elif self._resolution == 10:
                 for i in [1,2,3,7]:
                     si[i].RESOLUTION = 10
-                # SIITBX-64: add info for Band 8:  
-                bn = etree.Element('BAND_NAME')            
+                # SIITBX-64: add info for Band 8:
+                bn = etree.Element('BAND_NAME')
                 bn.text = 'B8'
                 bl = pi.Query_Options.Band_List
                 bl.insert(7,bn)
         except:
             self.logger.warning('No Spectral_Information in user metadata available')
-            
+
         if consolidatedTile == False:
-            gl = objectify.Element('Granule_List')     
+            gl = objectify.Element('Granule_List')
             gl.append(Granules)
             po = pi.L2A_Product_Organisation
             po.append(gl)
@@ -1731,30 +1731,30 @@ class L2A_Tables(object):
                 fn = fn.replace('_60m.jp2', '')
                 fn = fn.replace('_20m.jp2', '')
                 pxlqi2a.CLOUD_CONFIDENCE_MASK = fn
-                fn = os.path.basename(self._L2A_Tile_SNW_File) 
-                fn = fn.replace('_60m.jp2', '')            
+                fn = os.path.basename(self._L2A_Tile_SNW_File)
+                fn = fn.replace('_60m.jp2', '')
                 fn = fn.replace('_20m.jp2', '')
-                pxlqi2a.SNOW_ICE_CONFIDENCE_MASK = fn		
+                pxlqi2a.SNOW_ICE_CONFIDENCE_MASK = fn
                 qii = xp.getRoot('Quality_Indicators_Info')
                 qii.insert(3, pxlqi2a)
                 pviOld = xp.getTree('Quality_Indicators_Info', 'PVI_FILENAME')
                 pviNew = etree.Element('PVI_FILENAME')
                 fn = os.path.basename(self._L2A_Tile_PVI_File)
-                fn = fn.replace('.jp2', '')  
+                fn = fn.replace('.jp2', '')
                 pviNew.text = fn
                 qii.replace(pviOld, pviNew)
-                
+
             xp.export()
 
-            
+
         self.createPreviewImage()
-        self.config.timestamp('L2A_Tables: preview image exported')   
+        self.config.timestamp('L2A_Tables: preview image exported')
         # cleanup:
         if(os.path.isfile(self._TmpFile)):
             os.remove(self._TmpFile)
         if(os.path.isfile(database)):
             os.remove(database)
-            
+
         self.config.timestamp('L2A_Tables: stop export')
         return True
 
@@ -1767,14 +1767,14 @@ class L2A_Tables(object):
             return True
         else:
             self.logger.info('Creating Preview Image')
-               
+
         acMode = self.acMode
         self.acMode = False
         b = self.getBand(self.B02)
         g = self.getBand(self.B03)
         r = self.getBand(self.B04)
         self.acMode = acMode
-        
+
         b = self.scaleImgArray(b)
         g = self.scaleImgArray(g)
         r = self.scaleImgArray(r)
@@ -1787,7 +1787,7 @@ class L2A_Tables(object):
             out = Image.merge('RGB', (r,g,b))
             a = array(out)
             kwargs = {"tilesize": (2048, 2048), "prog": "RPCL"}
-            glymur.Jp2k(filename, a.astype(uint8), **kwargs)   
+            glymur.Jp2k(filename, a.astype(uint8), **kwargs)
             self.logger.debug('preview image exported')
             return True
         except:
@@ -1813,7 +1813,7 @@ class L2A_Tables(object):
         max_ = 0.250
         scale = 255.0
         arr = clip(arrclip, min_, max_)
-        #SIITBX-50: wrong scale was used: 
+        #SIITBX-50: wrong scale was used:
         scaledArr = uint8(arr*scale/max_)
         return scaledArr
 
@@ -1890,7 +1890,7 @@ class L2A_Tables(object):
         else: # return reflectance value:
             return (array / float32(self.config.dnScale)) # scaling from 0:1
 
-       
+
     def TOA_refl2rad(self, index, indataArr):
         ''' Converts the TOA reflectance to radiance.
 
@@ -1898,7 +1898,7 @@ class L2A_Tables(object):
             :type indataArray: a 2 dimensional numpy array (row x column) of type unsigned int 16.
             :return: the pixel data converted to radiance.
             :rtype: a 2 dimensional numpy array (row x column) of type unsigned int 16, representing radiance.
-            
+
             Additional inputs from L1 user Product_Image_Characteristics metadata:
             * QUANTIFICATION_VALUE: the scaling factor for converting DN to reflectance.
             * SOLAR_IRRADIANCE: the mean solar exoatmospheric irradiances for each band.
@@ -1923,13 +1923,13 @@ class L2A_Tables(object):
         x = arange(nrows, dtype=float32) / (nrows-1) * self.config.solze_arr.shape[0]
         y = arange(ncols, dtype=float32) / (ncols-1) * self.config.solze_arr.shape[1]
         sza = float32(rectBivariateSpline(x,y,self.config.solze_arr))
- 
+
         # Reflectance to ratiance modification according to Rolf, 27/10/2015:
         rho = indataArr.astype(float32)
         c1  = float32(self.config.c1[bandIndex])
         Es  = float32(self.config.e0[bandIndex])
         sc  = float32(1 / (c1 * self.config.dnScale))
-        
+
         # adding again the earth sun correction d2 = 1.0/U:
         pi32_d2 = float32(pi) * self.config.d2
 
@@ -1943,7 +1943,7 @@ class L2A_Tables(object):
         for i in range(nrows):
             rad_sza = float32(radians(sza[i,:]))
             cos_sza = float32(cos(rad_sza))
-            rho_cos_sza_Es_sc = float32(rho[i,:] * cos_sza * Es * sc)        
+            rho_cos_sza_Es_sc = float32(rho[i,:] * cos_sza * Es * sc)
             rad[i,:] = rho_cos_sza_Es_sc / pi32_d2
 
         return rad
@@ -2032,7 +2032,7 @@ class L2A_Tables(object):
         if (node.dtype != dataType):
             h5file.close()
             self.logger.fatal('wrong data type, must be: ' + str(node.dtype))
-            
+
         nrows, ncols, count = self.getBandSize(index)
         if (count < 1):
             h5file.close()
@@ -2166,13 +2166,13 @@ class L2A_Tables(object):
         if((os.path.isfile(globalSnowMapFn)) == False):
             self.logger.error('global snow map not present, snow detection will be performed')
             return True
-        
+
         l.acquire()
         try:
             img = Image.open(globalSnowMapFn)
         finally:
             l.release()
-            
+
         globalSnowMap = array(img)
         xy = self.cornerCoordinates
         xp = L2A_XmlParser(self.config, 'T2A')
@@ -2192,5 +2192,5 @@ class L2A_Tables(object):
         aoi = globalSnowMap[yMin:yMax,xMin:xMax]
         if(aoi.max() > 0):
             return True
-        
+
         return False

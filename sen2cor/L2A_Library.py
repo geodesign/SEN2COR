@@ -12,11 +12,11 @@ import sys, os
 def stdoutWrite(s):
     sys.stdout.write(s)
     sys.stdout.flush()
-    
+
 
 def stderrWrite(s):
     sys.stderr.write(s)
-    sys.stderr.flush()  
+    sys.stderr.flush()
 
 def statistics(arr, comment = ''):
     if len(arr) == 0:
