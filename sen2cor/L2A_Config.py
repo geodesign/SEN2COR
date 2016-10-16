@@ -72,7 +72,7 @@ class L2A_Config(object):
 
             if os.path.isfile(self._processingEstimationFn) == False:
             # init processing estimation file:
-                config = ConfigParser.RawConfigParser()
+                config = ConfigParser()
                 config.add_section('time estimation')
                 config.set('time estimation','t_est_60', self._tEst60)
                 config.set('time estimation','t_est_20', self._tEst20)
