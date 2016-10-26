@@ -83,13 +83,13 @@ class L2A_SceneClass(object):
         value = self.config.medianFilter
         if(value > 0):
             CM = median_filter(CM, value)
-            self.logger.info('Filtering output with level: ' + str(value))
+            self.logger.debug('Filtering output with level: ' + str(value))
 
-        self.logger.info('Storing final Classification Mask')
+        self.logger.debug('Storing final Classification Mask')
         self.tables.setBand(self.tables.SCL,(CM).astype(uint8))
-        self.logger.info('Storing final Snow Confidence Mask')
+        self.logger.debug('Storing final Snow Confidence Mask')
         self.tables.setBand(self.tables.SNW,(self.confidenceMaskSnow*100+0.5).astype(uint8))
-        self.logger.info('Storing final Cloud Confidence Mask')
+        self.logger.debug('Storing final Cloud Confidence Mask')
         self.tables.setBand(self.tables.CLD,(self.confidenceMaskCloud*100+0.5).astype(uint8))
         try:
             pass
@@ -120,7 +120,7 @@ class L2A_SceneClass(object):
     def __exit__(self):
         sys.exit(-1)
     def __del__(self):
-        self.logger.info('Module L2A_SceneClass deleted')
+        self.logger.debug('Module L2A_SceneClass deleted')
     def L2A_CSND_1_1(self):
         # Step 1a: Brightness threshold on red (Band 4)
         T1_B04 = self.config.T1_B04
@@ -681,9 +681,9 @@ class L2A_SceneClass(object):
         fraction = nrEntriesClassified / nrEntriesTotal
         percentage = fraction * 100
         self._sumPercentage += percentage
-        self.logger.info('Classificator: %d' % classificator)
-        self.logger.info('Percentage: %f' % percentage)
-        self.logger.info('Sum Percentage: %f' % self._sumPercentage)
+        self.logger.debug('Classificator: %d' % classificator)
+        self.logger.debug('Percentage: %f' % percentage)
+        self.logger.debug('Sum Percentage: %f' % self._sumPercentage)
         if(classificator == self._noData):
             self._sumPercentage = 0.0
 
@@ -765,7 +765,7 @@ class L2A_SceneClass(object):
         self.L2A_CSND_1_2()
         #self.config.timestamp('L2A_CSND_1_2  ')
         if(self.tables.sceneCouldHaveSnow() == True):
-            self.logger.info('Snow probability from climatology, detection will be performed')
+            self.logger.debug('Snow probability from climatology, detection will be performed')
             self.L2A_CSND_2_0()
             #self.config.timestamp('L2A_CSND_2_0  ')
             self.L2A_CSND_2_1()
@@ -783,7 +783,7 @@ class L2A_SceneClass(object):
             self.L2A_CSND_2_5()
             #self.config.timestamp('L2A_CSND_2_5  ')
         else:
-            self.logger.info('No snow probability from climatology, detection will be ignored')
+            self.logger.debug('No snow probability from climatology, detection will be ignored')
         self.L2A_CSND_3()
         #self.config.timestamp('L2A_CSND_3    ')
         #self.L2A_CSND_4()
