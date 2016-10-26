@@ -56,8 +56,8 @@ class L2A_Config(object):
                 os.mkdir(self._configDir)
 
             self._logDir = os.path.join(self._home, 'log')
-            if not os.path.exists(self._logDir):
-                os.mkdir(self._logDir)
+            #if not os.path.exists(self._logDir):
+                #os.mkdir(self._logDir)
 
             self._configFn = os.path.join(self._home, 'sen2cor', 'cfg', 'L2A_GIPP.xml')
             self.configSC = os.path.join(self._configDir, 'L2A_CAL_SC_GIPP.xml')
